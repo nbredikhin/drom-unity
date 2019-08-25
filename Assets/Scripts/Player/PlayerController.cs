@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     {
         if (rb == null)
         {
-            gameObject.GetComponent<Rigidbody2D>();
+            rb = gameObject.GetComponent<Rigidbody2D>();
         }
     }
 
