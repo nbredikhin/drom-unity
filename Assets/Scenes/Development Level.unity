@@ -2015,5 +2015,21 @@ PrefabInstance:
       propertyPath: m_DrawMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9001907901194309213, guid: a45a55db26b513749b990e30726125cb,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001907901194309213, guid: a45a55db26b513749b990e30726125cb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8137645745410426604, guid: 016f6581b86701440864bacd18ba1152,
+        type: 3}
+    - target: {fileID: 9001907901194309187, guid: a45a55db26b513749b990e30726125cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Hero
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a45a55db26b513749b990e30726125cb, type: 3}

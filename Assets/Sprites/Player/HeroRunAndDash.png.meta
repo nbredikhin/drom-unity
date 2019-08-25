@@ -1,97 +1,127 @@
 fileFormatVersion: 2
-guid: c2793f3af5347fc4797785859bb5b63a
+guid: 016f6581b86701440864bacd18ba1152
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1488407262595510008
-    second: DemonShoot_0
+      213: 8137645745410426604
+    second: HeroRunAndDash_0
   - first:
-      213: -2543134415299681155
-    second: DemonShoot_1
+      213: 3755975437081772331
+    second: HeroRunAndDash_1
   - first:
-      213: -6936793381342833046
-    second: DemonShoot_2
+      213: 6155595758570392287
+    second: HeroRunAndDash_2
   - first:
-      213: 395897537311394396
-    second: DemonShoot_3
+      213: -6140023443074957885
+    second: HeroRunAndDash_3
   - first:
-      213: 6498312455555722939
-    second: DemonShoot_4
+      213: 7238536569838853799
+    second: HeroRunAndDash_4
   - first:
-      213: 1918674222484659758
-    second: DemonShoot_5
+      213: 1702385226419982881
+    second: HeroRunAndDash_5
   - first:
-      213: 6449446571356154044
-    second: DemonShoot_6
+      213: -6267985337163931811
+    second: HeroRunAndDash_6
   - first:
-      213: 2062800864190329345
-    second: DemonShoot_7
+      213: -4589142668935612981
+    second: HeroRunAndDash_7
   - first:
-      213: 3401413655633952444
-    second: DemonShoot_8
+      213: -2122471088328816852
+    second: HeroRunAndDash_8
   - first:
-      213: -1838807715576129576
-    second: DemonShoot_9
+      213: -6292900840463374643
+    second: HeroRunAndDash_9
   - first:
-      213: -6233519738559329873
-    second: DemonShoot_10
+      213: 9214053800032449255
+    second: HeroRunAndDash_10
   - first:
-      213: -1849037369494228112
-    second: DemonShoot_11
+      213: 1691199169056444341
+    second: HeroRunAndDash_11
   - first:
-      213: 2565286991281188873
-    second: DemonShoot_12
+      213: 7194867221138993280
+    second: HeroRunAndDash_12
   - first:
-      213: -5351929868896440852
-    second: DemonShoot_13
+      213: -8562927674991174908
+    second: HeroRunAndDash_13
   - first:
-      213: -6555217432100920208
-    second: DemonShoot_14
+      213: 3071738873722737478
+    second: HeroRunAndDash_14
   - first:
-      213: 3086262564806278735
-    second: DemonShoot_15
+      213: -3597369921912379602
+    second: HeroRunAndDash_15
   - first:
-      213: 70923888924142477
-    second: DemonShoot_16
+      213: -9212674033419965452
+    second: HeroRunAndDash_16
   - first:
-      213: 1620161931448492960
-    second: DemonShoot_17
+      213: -2670449182289636334
+    second: HeroRunAndDash_17
   - first:
-      213: -7662086406925440803
-    second: DemonShoot_18
+      213: 2829128469482261597
+    second: HeroRunAndDash_18
   - first:
-      213: -730021443525764184
-    second: DemonShoot_19
+      213: 3896521415966405821
+    second: HeroRunAndDash_19
   - first:
-      213: 218461389304538167
-    second: DemonShoot_20
+      213: 1658266755497479800
+    second: HeroRunAndDash_20
   - first:
-      213: -2655132024087785067
-    second: DemonShoot_21
+      213: 888444358566905508
+    second: HeroRunAndDash_21
   - first:
-      213: 6860850239653339947
-    second: DemonShoot_22
+      213: -5938971201620905697
+    second: HeroRunAndDash_22
   - first:
-      213: 7415383690493820714
-    second: DemonShoot_23
+      213: -3280980206291776176
+    second: HeroRunAndDash_23
   - first:
-      213: -6370436312873948670
-    second: DemonShoot_24
+      213: 4994816076503885035
+    second: HeroRunAndDash_24
   - first:
-      213: -2708492398921174336
-    second: DemonShoot_25
+      213: -7993452908953454559
+    second: HeroRunAndDash_25
   - first:
-      213: -3129612992569745773
-    second: DemonShoot_26
+      213: 2142461134571164104
+    second: HeroRunAndDash_26
   - first:
-      213: 5789329947881490177
-    second: DemonShoot_27
+      213: 8137302514252317558
+    second: HeroRunAndDash_27
   - first:
-      213: 1397163271130348227
-    second: DemonShoot_28
+      213: -5514674402385883616
+    second: HeroRunAndDash_28
   - first:
-      213: 991883111958214303
-    second: DemonShoot_29
+      213: -6967073519682252926
+    second: HeroRunAndDash_29
+  - first:
+      213: 5450579825155624321
+    second: HeroRunAndDash_30
+  - first:
+      213: 45750084408649989
+    second: HeroRunAndDash_31
+  - first:
+      213: -628957392563506736
+    second: HeroRunAndDash_32
+  - first:
+      213: 4475299885864955171
+    second: HeroRunAndDash_33
+  - first:
+      213: 1179569252753772182
+    second: HeroRunAndDash_34
+  - first:
+      213: 6435214344707750800
+    second: HeroRunAndDash_35
+  - first:
+      213: 3507542369467768657
+    second: HeroRunAndDash_36
+  - first:
+      213: 7893374281403537648
+    second: HeroRunAndDash_37
+  - first:
+      213: -2366158212603230664
+    second: HeroRunAndDash_38
+  - first:
+      213: -356011864639630902
+    second: HeroRunAndDash_39
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -188,12 +218,180 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DemonShoot_0
+      name: HeroRunAndDash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb2ef03377c35b489670e9a63330123
+      internalID: 8137645745410426604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d931444bad1f7114dbeedbd56b0a2dc3
+      internalID: 3755975437081772331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3242999567a3484e86f48a439a51677
+      internalID: 6155595758570392287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551916eefcdaa7d41ac70b5526475d8f
+      internalID: -6140023443074957885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada947bd197f1cd458c65002ab7b3b6e
+      internalID: 7238536569838853799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350494d0b12be0341a682ecf1bb60427
+      internalID: 1702385226419982881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42031a11ff8b1da4393793cbadc8d35d
+      internalID: -6267985337163931811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d7de419fa0b5a4eb2061d330dc4a3f
+      internalID: -4589142668935612981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_8
       rect:
         serializedVersion: 2
         x: 0
         y: 112
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,19 +400,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d55ed99e558001a489479b0d089f87d2
-      internalID: 1488407262595510008
+      spriteID: 01bbf518aac9a864a9cd12ef9febbb4e
+      internalID: -2122471088328816852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_1
+      name: HeroRunAndDash_9
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 112
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -223,19 +421,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15a52cfed16d2da4c940d2ada425a5ff
-      internalID: -2543134415299681155
+      spriteID: 7ce9c7d94ebaacc4ab6b9e49a1b7f6fc
+      internalID: -6292900840463374643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_2
+      name: HeroRunAndDash_10
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 112
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -244,19 +442,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38bc56a6005094440b8793c5b9d23533
-      internalID: -6936793381342833046
+      spriteID: f711103d6a50ed94993306e791a85f66
+      internalID: 9214053800032449255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_3
+      name: HeroRunAndDash_11
       rect:
         serializedVersion: 2
-        x: 45
+        x: 48
         y: 112
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -265,40 +463,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f5ce855081f78c41a12ff014aceeeb2
-      internalID: 395897537311394396
+      spriteID: 8a949e5f1d80be9458f40491e6d77c68
+      internalID: 1691199169056444341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_4
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 112
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d454e362d525054a9fbb77a03cea985
-      internalID: 6498312455555722939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DemonShoot_5
+      name: HeroRunAndDash_12
       rect:
         serializedVersion: 2
         x: 0
         y: 96
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -307,19 +484,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52cc8982d0c1fa640bc9e5c94c5bfdbd
-      internalID: 1918674222484659758
+      spriteID: 4b397959817b58d43963fd0a6725b41c
+      internalID: 7194867221138993280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_6
+      name: HeroRunAndDash_13
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 96
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -328,19 +505,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0c810d56494df749a108ffaf361ae8e
-      internalID: 6449446571356154044
+      spriteID: d35576646e2a4974db72270fa7c55924
+      internalID: -8562927674991174908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_7
+      name: HeroRunAndDash_14
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 96
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -349,19 +526,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 363ec5d1d81149a458b9e37a840f781b
-      internalID: 2062800864190329345
+      spriteID: a85010984bb025a4c8c7338ce35a7e72
+      internalID: 3071738873722737478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_8
+      name: HeroRunAndDash_15
       rect:
         serializedVersion: 2
-        x: 45
+        x: 48
         y: 96
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -370,40 +547,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 380ff791ec3cfa54f97a044fc7716105
-      internalID: 3401413655633952444
+      spriteID: db6f3945bc950fd40b496d165cb4a148
+      internalID: -3597369921912379602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_9
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 96
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60ed78735ae2b0944a4bdb5096e5f6c8
-      internalID: -1838807715576129576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DemonShoot_10
+      name: HeroRunAndDash_16
       rect:
         serializedVersion: 2
         x: 0
         y: 80
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -412,19 +568,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92bddb8d64d09cb4d8d23d1f2e813508
-      internalID: -6233519738559329873
+      spriteID: 324c4212c61ca4444b6a532ce5fe346f
+      internalID: -9212674033419965452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_11
+      name: HeroRunAndDash_17
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 80
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -433,19 +589,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89da05ca9cd79734c8d57639d495c758
-      internalID: -1849037369494228112
+      spriteID: 0d88560a1fde0cd4e8aa0e12267caadb
+      internalID: -2670449182289636334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_12
+      name: HeroRunAndDash_18
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 80
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -454,19 +610,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71367f7f3bc8d9249a4b732c103d66ee
-      internalID: 2565286991281188873
+      spriteID: 76d8e4bba26811a4aa77c40fdce5b926
+      internalID: 2829128469482261597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_13
+      name: HeroRunAndDash_19
       rect:
         serializedVersion: 2
-        x: 45
+        x: 48
         y: 80
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -475,40 +631,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00516f9b8a03eca439e999c9801d8237
-      internalID: -5351929868896440852
+      spriteID: 2779ba59fbdf9ac45b7e0b2a593d6931
+      internalID: 3896521415966405821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_14
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 80
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42ad624d02cb7f1479c3fd941f3d718f
-      internalID: -6555217432100920208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DemonShoot_15
+      name: HeroRunAndDash_20
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -517,19 +652,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44ed73e30eb4d55439f924df09daea0a
-      internalID: 3086262564806278735
+      spriteID: 6a0a394e14f7e9444aea4204887ffea9
+      internalID: 1658266755497479800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_16
+      name: HeroRunAndDash_21
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 64
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -538,19 +673,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecfc48a93ef87404dacebfa2877f4312
-      internalID: 70923888924142477
+      spriteID: e918959c395383c4b8b0ea5846b1e5e6
+      internalID: 888444358566905508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_17
+      name: HeroRunAndDash_22
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 64
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -559,19 +694,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a79b8ff2dc63cc4fbce4b96fa9df021
-      internalID: 1620161931448492960
+      spriteID: 62683320c657f9d45953c7803572296a
+      internalID: -5938971201620905697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_18
+      name: HeroRunAndDash_23
       rect:
         serializedVersion: 2
-        x: 45
+        x: 48
         y: 64
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -580,40 +715,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83cc77193b422ad4f9e5016f9631d92c
-      internalID: -7662086406925440803
+      spriteID: 34afd068adabc604a9a3176a343631bc
+      internalID: -3280980206291776176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_19
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 64
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d85081f0689cc244289124d64040c7a3
-      internalID: -730021443525764184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DemonShoot_20
+      name: HeroRunAndDash_24
       rect:
         serializedVersion: 2
         x: 0
         y: 48
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -622,19 +736,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a1905b08696ef948a20ac5f90ad9ae9
-      internalID: 218461389304538167
+      spriteID: 141acfe12a2159e4ba3a7fb5f9bc2ca3
+      internalID: 4994816076503885035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_21
+      name: HeroRunAndDash_25
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 48
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -643,19 +757,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03ffce2dfd9fb2041846ef413c3406f8
-      internalID: -2655132024087785067
+      spriteID: c31d27e866359e54ab4bf39b155cf19b
+      internalID: -7993452908953454559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_22
+      name: HeroRunAndDash_26
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 48
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -664,19 +778,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b893f95b75e5a842b7e44b11dd23b3a
-      internalID: 6860850239653339947
+      spriteID: 450036a572f02fb4fb9fc10e632e1322
+      internalID: 2142461134571164104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_23
+      name: HeroRunAndDash_27
       rect:
         serializedVersion: 2
-        x: 45
+        x: 48
         y: 48
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -685,40 +799,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80cf4394c227e054482f6c8f2a7e8c87
-      internalID: 7415383690493820714
+      spriteID: 211b561829d08e14b823332b1c762de7
+      internalID: 8137302514252317558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_24
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 48
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5677922504137e04b83397d5c816b335
-      internalID: -6370436312873948670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DemonShoot_25
+      name: HeroRunAndDash_28
       rect:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -727,19 +820,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54a6eb00b334843429cfedc1814c107d
-      internalID: -2708492398921174336
+      spriteID: 27304d7500ca4814bbddae2a212f8a21
+      internalID: -5514674402385883616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_26
+      name: HeroRunAndDash_29
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 32
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -748,19 +841,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df145cab93ca7cc499ce42909dfbb5ff
-      internalID: -3129612992569745773
+      spriteID: 7d553236c8148554bb9986e87832d225
+      internalID: -6967073519682252926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_27
+      name: HeroRunAndDash_30
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 32
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -769,19 +862,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ffa5d00305eeb14aa69e8562d0f1f04
-      internalID: 5789329947881490177
+      spriteID: 12936f61ce0d4be47a22ce608f0b224c
+      internalID: 5450579825155624321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_28
+      name: HeroRunAndDash_31
       rect:
         serializedVersion: 2
-        x: 45
+        x: 48
         y: 32
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -790,19 +883,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 049a77b644fc92a44963110a6657d71d
-      internalID: 1397163271130348227
+      spriteID: 2c7902b83535b004a8d9295211e16fb0
+      internalID: 45750084408649989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonShoot_29
+      name: HeroRunAndDash_32
       rect:
         serializedVersion: 2
-        x: 60
-        y: 32
-        width: 15
+        x: 0
+        y: 16
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -811,8 +904,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 617cca41e882a064fa2558fde1113d97
-      internalID: 991883111958214303
+      spriteID: 5f567655bec947b48944b94b2503cd6e
+      internalID: -628957392563506736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25177475eb6d354fb80a3b1f168678f
+      internalID: 4475299885864955171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7799e1b8a1372741815a28afe196397
+      internalID: 1179569252753772182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ae9e21b3d2a7b42b5c1633664d4b04
+      internalID: 6435214344707750800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85685d85ddfb3f428c20b615cf07174
+      internalID: 3507542369467768657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_37
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51910a6060a736148b11bf02551febdc
+      internalID: 7893374281403537648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff9ea07280dfc448808126893621509
+      internalID: -2366158212603230664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroRunAndDash_39
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37523bcfc752e53448559cc5d5b046c0
+      internalID: -356011864639630902
       vertices: []
       indices: 
       edges: []
