@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
-    [Header("References")] 
-    
-    public Animator anim; 
-        
+    [Header("References")]
+
+    public Animator anim;
+
     public PlayerController pc;
 
     private void Awake()
@@ -23,7 +23,7 @@ public class PlayerAnimator : MonoBehaviour
     {
         MoveAnim();
     }
-    
+
     void MoveAnim()
     {
         if (pc.MovementDirection != Vector2.zero)
