@@ -60,7 +60,6 @@ public class Weapon : MonoBehaviour
                 {
                     break;
                 }
-                Debug.Log("Attacking");
                 if (currentAmmo <= 0)
                 {
                     ChangeState(WeaponState.Reloading);
@@ -75,17 +74,16 @@ public class Weapon : MonoBehaviour
 
     private bool isCoolDownComplete()
     {
-        return (Time.realtimeSinceStartup - coolDownTimestamp >= CoolDownTimeSec);
+        return (Time.time - coolDownTimestamp >= CoolDownTimeSec);
     }
 
     private bool isReloadComplete()
     {
-        return (Time.realtimeSinceStartup - reloadTimestamp >= ReloadTimeSec);
+        return (Time.time - reloadTimestamp >= ReloadTimeSec);
     }
 
     void DoneShooting()
     {
-        Debug.Log("Done Shooting!");
         doneShooting = true;
     }
 
@@ -99,14 +97,14 @@ public class Weapon : MonoBehaviour
     {
         if (newState == WeaponState.Reloading)
         {
-            reloadTimestamp = Time.realtimeSinceStartup;
+            reloadTimestamp = Time.time;
             currentState = newState;
             return true;
         }
 
         if (newState == WeaponState.CoolDown)
         {
-            coolDownTimestamp = Time.realtimeSinceStartup;
+            coolDownTimestamp = Time.time;
             currentState = newState;
             return true;
         }
@@ -118,10 +116,11 @@ public class Weapon : MonoBehaviour
                 return false;
             }
 
+            var q = Quaternion.FromToRotation(transform.up, new Vector3(shootingDirection.x, shootingDirection.y, 0));
             projectile = Instantiate(ProjectilePrefab,
-                                     transform,
-                                     true);
-
+                                     transform.position,
+                                     q,
+                                     transform);
             projectile.SendMessage("LaunchAttack", shootingDirection);
             --currentAmmo;
 

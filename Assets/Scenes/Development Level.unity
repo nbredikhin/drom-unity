@@ -5919,17 +5919,6 @@ PrefabInstance:
       propertyPath: _pathFinder
       value: 
       objectReference: {fileID: 198557627}
-    - target: {fileID: 398112947826827837, guid: e4c1e3c5af38bc64c82546b9b5ab1e25,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 8749302817991680212, guid: d7945ba062e31db498aeb54cf729ffd1,
-        type: 3}
-    - target: {fileID: 398112947826827837, guid: e4c1e3c5af38bc64c82546b9b5ab1e25,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4c1e3c5af38bc64c82546b9b5ab1e25, type: 3}
 --- !u!1001 &641570705194331899

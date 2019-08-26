@@ -24,6 +24,10 @@ public class GoblinController : MonoBehaviour
     private int currentPathNode;
     private float pathUpdateTime = 0;
 
+    bool knockedBack;
+    float knockBackStart;
+    public float KnockBackTime = 0.3f;
+
     private void Awake()
     {
         if (rb == null)
@@ -60,6 +64,18 @@ public class GoblinController : MonoBehaviour
     private void Update()
     {
         if (_target == null) return;
+
+        if (knockedBack)
+        {
+            if (Time.time - knockBackStart >= KnockBackTime)
+            {
+                knockedBack = false;
+            }
+            else
+            {
+                return;
+            }
+        }
 
         var targetPosition = _target.transform.position;
         var currentPosition = transform.position;
@@ -119,6 +135,16 @@ public class GoblinController : MonoBehaviour
                 currentPathNode = currentPathNode + 1;
             }
         }
+    }
+
+    void KnockBack(Vector2 direction)
+    {
+        knockedBack = true;
+        knockBackStart = Time.time;
+
+        rb.AddForce(direction);
+
+        Debug.Log(direction);
     }
 
     void Die()

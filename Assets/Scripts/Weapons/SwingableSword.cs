@@ -8,19 +8,23 @@ public class SwingableSword : MonoBehaviour
 
     public float SwingAngleDeg = 90;
 
-    Vector2 swingDirection;
+    float swingStart;
+    float swingEnd;
+
 
     float swingStartTimestamp;
-    Vector2 swingStart;
-    Vector2 swingEnd;
     float swingPoint;
     public float SwingSpeed = 0.1f;
 
     bool isShooting = false;
 
+    public float Damage = 10.0f;
+    public float KnockBackForce = 20.0f;
+
     // Start is called before the first frame update
     void Start()
     {
+        swingPoint = 0;
     }
 
     // Update is called once per frame
@@ -31,7 +35,7 @@ public class SwingableSword : MonoBehaviour
             return;
         }
 
-        if (Time.realtimeSinceStartup - swingStartTimestamp >= SwingSpeed)
+        if (Time.time - swingStartTimestamp >= SwingSpeed)
         {
             transform.parent.SendMessage("DoneShooting");
             Destroy(gameObject);
@@ -39,20 +43,9 @@ public class SwingableSword : MonoBehaviour
         }
         else
         {
+            var q = Quaternion.Euler(0, 0, Mathf.LerpAngle(swingStart, swingEnd, swingPoint / SwingSpeed));
+            transform.rotation = q;
             swingPoint += Time.deltaTime;
-            Vector2 path = Vector2.Lerp(swingStart, swingEnd, swingPoint / SwingSpeed) * SwordLength;
-
-            DrawDebugSword(path);
-        }
-    }
-
-    void FixedUpdate()
-    {
-        Vector2 path = Vector2.Lerp(swingStart, swingEnd, swingPoint / SwingSpeed) * SwordLength;
-        var hit = Physics2D.Raycast(transform.parent.position, path.normalized, SwordLength, LayerMask.GetMask("Goblins"));
-        if (hit.collider != null)
-        {
-            hit.collider.gameObject.SendMessage("DecreaseHealth", 50);
         }
     }
 
@@ -63,25 +56,19 @@ public class SwingableSword : MonoBehaviour
             return;
         }
 
-        swingDirection = direction.normalized;
-        swingStartTimestamp = Time.realtimeSinceStartup;
+        swingStartTimestamp = Time.time;
 
-        swingStart = Quaternion.Euler(0, 0, -SwingAngleDeg / 2) * swingDirection;
-        swingEnd = Quaternion.Euler(0, 0, SwingAngleDeg / 2) * swingDirection;
+        swingStart = transform.rotation.eulerAngles.z - SwingAngleDeg / 2.0f;
+        swingEnd = swingStart + SwingAngleDeg;
 
         isShooting = true;
     }
 
-    void DrawDebugSword(Vector2 swordPos)
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.DrawLine(transform.parent.position,
-            transform.parent.position + new Vector3(swordPos.x, swordPos.y, 0),
-            Color.blue);
-        Debug.DrawLine(transform.parent.position,
-            transform.parent.position + new Vector3(swingStart.x, swingStart.y, 0) * SwordLength,
-            Color.red);
-        Debug.DrawLine(transform.parent.position,
-            transform.parent.position + new Vector3(swingEnd.x, swingEnd.y, 0) * SwordLength,
-            Color.green);
+        collider.SendMessage("DecreaseHealth", Damage, SendMessageOptions.DontRequireReceiver);
+        collider.SendMessage("KnockBack",
+                             new Vector2(transform.up.x, transform.up.y) * KnockBackForce,
+                             SendMessageOptions.DontRequireReceiver);
     }
 }
