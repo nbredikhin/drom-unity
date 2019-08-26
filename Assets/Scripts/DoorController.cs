@@ -26,15 +26,13 @@ public class DoorController : MonoBehaviour
                     break;
             }
         }
+
+        doorAnimator.SetBool("IsOpened", false);
     }
 
-    void Update()
+    void SetOpened(bool state)
     {
-        if (Input.GetKeyDown("space"))
-        {
-            doorAnimator.SetBool("IsOpened", !doorAnimator.GetBool("IsOpened"));
-            Debug.Log(doorAnimator.GetBool("IsOpened"));
-        }
+        doorAnimator.SetBool("IsOpened", state);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
