@@ -22,12 +22,15 @@ public class PathNode
 
 public class TilePathFinder : MonoBehaviour
 {
-    private Grid grid;
+    public Grid grid;
     private List<Tilemap> collisionTilemaps = new List<Tilemap>();
 
     private void Awake()
     {
-        grid = this.GetComponent<Grid>();
+        if (grid == null)
+        {
+            grid = this.GetComponent<Grid>();
+        }
 
         var tilemaps = grid.GetComponentsInChildren<Tilemap>();
         foreach (var tilemap in tilemaps)

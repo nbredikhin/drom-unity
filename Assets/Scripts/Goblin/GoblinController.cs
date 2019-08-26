@@ -90,13 +90,16 @@ public class GoblinController : MonoBehaviour
             if ((pathTargetPosition - _target.transform.position).magnitude > PATH_RECALCULATE_DISTANCE)
                 RecalculatePath();
 
-            targetPosition = currentPath[currentPathNode];
-
-            if (DrawPath && currentPath.Count > 1)
+            if (currentPath != null)
             {
-                for (int i = 1; i < currentPath.Count; i++)
+                targetPosition = currentPath[currentPathNode];
+
+                if (DrawPath && currentPath.Count > 1)
                 {
-                    Debug.DrawLine(currentPath[i - 1], currentPath[i], PathColor);
+                    for (int i = 1; i < currentPath.Count; i++)
+                    {
+                        Debug.DrawLine(currentPath[i - 1], currentPath[i], PathColor);
+                    }
                 }
             }
         }
@@ -111,7 +114,7 @@ public class GoblinController : MonoBehaviour
         else
         {
             rb.velocity = Vector2.zero;
-            if (currentPathNode < currentPath.Count - 1)
+            if (currentPath != null && currentPathNode < currentPath.Count - 1)
             {
                 currentPathNode = currentPathNode + 1;
             }
