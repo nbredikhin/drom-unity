@@ -8,21 +8,26 @@ public class Weapon : MonoBehaviour
     float reloadTimestamp;
     public float ReloadTimeSec = 1.0f;
     float coolDownTimestamp;
-    public float CoolDownTimeSec = 1.0f;
+    public float CoolDownTimeSec = 0.5f;
 
     public int MaxAmmo = 1;
     int currentAmmo;
 
+    bool doneShooting = false;
+    Vector2 shootingDirection;
+
+    public GameObject ProjectilePrefab;
+    GameObject projectile;
+
     enum WeaponState { Idle, Reloading, Shooting, CoolDown };
     WeaponState currentState;
 
-    // Start is called before the first frame update
     void Start()
     {
+        currentAmmo = MaxAmmo;
         currentState = WeaponState.Idle;
     }
 
-    // Update is called once per frame
     void Update()
     {
         switch (currentState) {
@@ -51,9 +56,11 @@ public class Weapon : MonoBehaviour
             break;
 
             case WeaponState.Shooting:
-                Debug.Log("Attacking!");
-
-                --currentAmmo;
+                if (!doneShooting)
+                {
+                    break;
+                }
+                Debug.Log("Attacking");
                 if (currentAmmo <= 0)
                 {
                     ChangeState(WeaponState.Reloading);
@@ -76,8 +83,15 @@ public class Weapon : MonoBehaviour
         return (Time.realtimeSinceStartup - reloadTimestamp >= ReloadTimeSec);
     }
 
+    void DoneShooting()
+    {
+        Debug.Log("Done Shooting!");
+        doneShooting = true;
+    }
+
     bool Attack(Vector2 direction)
     {
+        shootingDirection = direction.normalized;
         return ChangeState(WeaponState.Shooting);
     }
 
@@ -103,6 +117,14 @@ public class Weapon : MonoBehaviour
             {
                 return false;
             }
+
+            projectile = Instantiate(ProjectilePrefab,
+                                     transform,
+                                     true);
+
+            projectile.SendMessage("LaunchAttack", shootingDirection);
+            --currentAmmo;
+
             currentState = newState;
             return true;
         }

@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public float MovementSpeed => _movementSpeed;
 
     [SerializeField] private Vector2 _movementDirection;
+    [SerializeField] private Vector2 _previousMovementDirection;
 
     public Vector2 MovementDirection => _movementDirection;
 
@@ -83,7 +84,12 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            SendMessage("Attack", new Vector2(0, 0));
+            SendMessage("Attack", _previousMovementDirection);
+        }
+
+        if (_movementDirection.magnitude != 0)
+        {
+            _previousMovementDirection = _movementDirection;
         }
     }
 

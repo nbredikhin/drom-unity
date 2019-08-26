@@ -3146,8 +3146,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReloadTimeSec: 1
-  CoolDownTimeSec: 1
+  CoolDownTimeSec: 0.5
   MaxAmmo: 2
+  ProjectilePrefab: {fileID: 566885150880161786, guid: ee7c8d5a579c644978c8850061354f0c,
+    type: 3}
 --- !u!1 &1038695424
 GameObject:
   m_ObjectHideFlags: 0
