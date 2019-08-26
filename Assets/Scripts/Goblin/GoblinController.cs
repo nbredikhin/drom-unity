@@ -120,4 +120,10 @@ public class GoblinController : MonoBehaviour
             }
         }
     }
+
+    void Die()
+    {
+        Debug.Log("I'm (Goblin) dead!");
+        Destroy(gameObject);
+    }
 }

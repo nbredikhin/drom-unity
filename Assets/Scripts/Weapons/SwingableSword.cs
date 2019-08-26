@@ -40,16 +40,19 @@ public class SwingableSword : MonoBehaviour
         else
         {
             swingPoint += Time.deltaTime;
-            Vector2 path = Vector2.Lerp(swingStart, swingEnd, swingPoint / SwingSpeed);
-            Debug.DrawLine(transform.parent.position,
-                transform.parent.position + new Vector3(path.x, path.y, 0) * SwordLength,
-                Color.blue);
-            Debug.DrawLine(transform.parent.position,
-                transform.parent.position + new Vector3(swingStart.x, swingStart.y, 0) * SwordLength,
-                Color.red);
-            Debug.DrawLine(transform.parent.position,
-                transform.parent.position + new Vector3(swingEnd.x, swingEnd.y, 0) * SwordLength,
-                Color.green);
+            Vector2 path = Vector2.Lerp(swingStart, swingEnd, swingPoint / SwingSpeed) * SwordLength;
+
+            DrawDebugSword(path);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        Vector2 path = Vector2.Lerp(swingStart, swingEnd, swingPoint / SwingSpeed) * SwordLength;
+        var hit = Physics2D.Raycast(transform.parent.position, path.normalized, SwordLength, LayerMask.GetMask("Goblins"));
+        if (hit.collider != null)
+        {
+            hit.collider.gameObject.SendMessage("DecreaseHealth", 50);
         }
     }
 
@@ -65,6 +68,20 @@ public class SwingableSword : MonoBehaviour
 
         swingStart = Quaternion.Euler(0, 0, -SwingAngleDeg / 2) * swingDirection;
         swingEnd = Quaternion.Euler(0, 0, SwingAngleDeg / 2) * swingDirection;
+
         isShooting = true;
+    }
+
+    void DrawDebugSword(Vector2 swordPos)
+    {
+        Debug.DrawLine(transform.parent.position,
+            transform.parent.position + new Vector3(swordPos.x, swordPos.y, 0),
+            Color.blue);
+        Debug.DrawLine(transform.parent.position,
+            transform.parent.position + new Vector3(swingStart.x, swingStart.y, 0) * SwordLength,
+            Color.red);
+        Debug.DrawLine(transform.parent.position,
+            transform.parent.position + new Vector3(swingEnd.x, swingEnd.y, 0) * SwordLength,
+            Color.green);
     }
 }

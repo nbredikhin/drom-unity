@@ -45,4 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwordLength: 0.3
   SwingAngleDeg: 90
-  SwingSpeed: 0.5
+  SwingSpeed: 0.25
