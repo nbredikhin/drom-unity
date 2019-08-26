@@ -80,6 +80,11 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Dash(_movementDirection));
         }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            SendMessage("Attack", new Vector2(0, 0));
+        }
     }
 
     void Move()
