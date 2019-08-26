@@ -9,10 +9,23 @@ public class DoorController : MonoBehaviour
     public Animator doorAnimator;
     public GameObject exitGameObject;
     public GameObject nextCamera;
+    public bool isFrontDoor = true;
 
     void Awake()
     {
-
+        var sprites = GetComponentsInChildren<SpriteRenderer>();
+        foreach (var sprite in sprites)
+        {
+            switch (sprite.gameObject.name)
+            {
+                case "Door Sprite":
+                    sprite.enabled = isFrontDoor;
+                    break;
+                case "Outer Sprite":
+                    sprite.enabled = !isFrontDoor;
+                    break;
+            }
+        }
     }
 
     void Update()
