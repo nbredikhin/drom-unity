@@ -3145,9 +3145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 118b8dd30d1af44d592642c417e26139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReloadTimeSec: 1
+  ReloadTimeSec: 0.5
   CoolDownTimeSec: 0.5
-  MaxAmmo: 2
+  MaxAmmo: 1
   ProjectilePrefab: {fileID: 566885150880161786, guid: ee7c8d5a579c644978c8850061354f0c,
     type: 3}
 --- !u!1 &1038695424
