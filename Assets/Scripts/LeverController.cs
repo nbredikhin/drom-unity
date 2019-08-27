@@ -21,6 +21,7 @@ public class LeverController : MonoBehaviour
         stateBroadcaster = GetComponent<StateBroadcaster>();
 
         animator.SetBool("State", state);
+        animator.speed = 100;
         stateBroadcaster.BroadcastState(state, delay);
     }
 
@@ -28,6 +29,7 @@ public class LeverController : MonoBehaviour
     {
         state = !state;
 
+        animator.speed = 1;
         animator.SetBool("State", state);
         stateBroadcaster.BroadcastState(state, delay);
     }

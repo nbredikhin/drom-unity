@@ -32,12 +32,15 @@ public class DoorController : MonoBehaviour
 
         SetOpened(_isOpened);
         SetLocked(_isLocked);
+        // Skip animation on start
+        doorAnimator.speed = 100;
     }
 
     void SetOpened(bool state)
     {
         _isOpened = state;
         doorAnimator.SetBool("IsOpened", _isOpened && !_isLocked);
+        doorAnimator.speed = 1;
     }
 
     void SetLocked(bool state)
