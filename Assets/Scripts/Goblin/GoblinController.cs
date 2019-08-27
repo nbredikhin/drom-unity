@@ -34,6 +34,8 @@ public class GoblinController : MonoBehaviour
     public float AttackTime = 1.0f;
     public float MaxAttackDistance = 0.2f;
 
+    public Vector2 MovementVelocity;
+
     private void Awake()
     {
         if (rb == null)
@@ -69,6 +71,8 @@ public class GoblinController : MonoBehaviour
 
     private void Update()
     {
+        MovementVelocity = Vector2.zero;
+
         if (_target == null) return;
 
         if (knockedBack)
@@ -158,11 +162,13 @@ public class GoblinController : MonoBehaviour
         }
         if (direction.magnitude > 0.05f)
         {
-            rb.velocity = direction.normalized * MOVEMENT_BASE_SPEED * Time.deltaTime;
+            MovementVelocity = direction.normalized * MOVEMENT_BASE_SPEED;
+            rb.velocity = MovementVelocity * Time.deltaTime;
         }
         else
         {
-            rb.velocity = Vector2.zero;
+            MovementVelocity = Vector2.zero;
+            rb.velocity = MovementVelocity;
             if (currentPath != null && currentPathNode < currentPath.Count - 1)
             {
                 currentPathNode = currentPathNode + 1;
