@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9001907900422162120}
   - component: {fileID: 9001907900422162117}
   - component: {fileID: 9001907900422162122}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -52,6 +52,7 @@ MonoBehaviour:
   DASH_COOLDOWN: 1.2
   _movementSpeed: 0
   _movementDirection: {x: 0, y: 0}
+  _previousMovementDirection: {x: 0, y: 0}
   _mouseDirection: {x: 0, y: 0}
   rb: {fileID: 9001907900422162122}
 --- !u!114 &9001907900422162117
@@ -100,7 +101,7 @@ GameObject:
   - component: {fileID: 9001907901194309186}
   - component: {fileID: 9001907901194309213}
   - component: {fileID: 9001907901194309212}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Demon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +169,7 @@ SpriteRenderer:
   m_Size: {x: 0.15, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &9001907901194309212
@@ -200,7 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9001907902055503645}
   - component: {fileID: 9001907902055503644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}

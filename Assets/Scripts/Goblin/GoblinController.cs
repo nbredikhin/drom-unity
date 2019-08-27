@@ -28,6 +28,12 @@ public class GoblinController : MonoBehaviour
     float knockBackStart;
     public float KnockBackTime = 0.3f;
 
+    // This is crap, need to implement using a proper state machine
+    bool attacking;
+    float attackStart;
+    public float AttackTime = 1.0f;
+    public float MaxAttackDistance = 0.2f;
+
     private void Awake()
     {
         if (rb == null)
@@ -80,18 +86,22 @@ public class GoblinController : MonoBehaviour
         var targetPosition = _target.transform.position;
         var currentPosition = transform.position;
         var raycastDirection = targetPosition - currentPosition;
+        raycastDirection.z = 0;
         var raycastHit = Physics2D.Raycast(
             currentPosition,
             raycastDirection.normalized,
-            raycastDirection.magnitude,
+            raycastDirection.magnitude - 0.05f,
             PathFindObstaclesMask
         );
+        // Debug.Log(targetPosition + " " + currentPosition + " " + raycastDirection);
+        //Debug.DrawLine(currentPosition, currentPosition + raycastDirection, Color.red);
         var isPathClear = raycastHit.collider == null;
+        // Debug.Log(raycastHit.collider.gameObject.name);
 
         if (isPathClear)
         {
             if (DrawPath)
-                Debug.DrawLine(currentPosition, currentPosition + raycastDirection, PathColor);
+                Debug.DrawLine(currentPosition, currentPosition + raycastDirection, Color.red);
         }
         else
         {
@@ -120,9 +130,32 @@ public class GoblinController : MonoBehaviour
             }
         }
 
-        // Move goblin
         var direction = targetPosition - currentPosition;
+
+        if (attacking)
+        {
+            if (Time.time - attackStart >= AttackTime)
+            {
+                attacking = false;
+            }
+            else
+            {
+                if (Mathf.Abs(Time.time - attackStart - AttackTime / 2) <= 2 * Time.deltaTime)
+                {
+                    AttackUnit(new Vector2(direction.x, direction.y));
+                }
+                return;
+            }
+        }
+
+        // Move goblin
         direction.z = 0;
+        //Debug.Log(direction.magnitude);
+        if (direction.magnitude < MaxAttackDistance && isPathClear)
+        {
+            PrepareForAttack();
+            return;
+        }
         if (direction.magnitude > 0.05f)
         {
             rb.velocity = direction.normalized * MOVEMENT_BASE_SPEED * Time.deltaTime;
@@ -137,14 +170,28 @@ public class GoblinController : MonoBehaviour
         }
     }
 
+    void PrepareForAttack()
+    {
+        if (attacking)
+        {
+            return;
+        }
+        rb.velocity = Vector2.zero;
+        attacking = true;
+        attackStart = Time.time;
+    }
+
+    void AttackUnit(Vector2 targetDirection)
+    {
+        SendMessage("Attack", targetDirection);
+    }
+
     void KnockBack(Vector2 direction)
     {
         knockedBack = true;
         knockBackStart = Time.time;
 
         rb.AddForce(direction);
-
-        Debug.Log(direction);
     }
 
     void Die()

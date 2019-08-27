@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 398112947300807351}
   - component: {fileID: 398112947300807350}
   - component: {fileID: -5273416284248386528}
+  - component: {fileID: 1487878468555393033}
   m_Layer: 10
   m_Name: Goblin
   m_TagString: Untagged
@@ -88,6 +89,7 @@ MonoBehaviour:
   rb: {fileID: 398112947300807351}
   _pathFinder: {fileID: 0}
   KnockBackTime: 0.5
+  AttackTime: 1
 --- !u!58 &398112947300807348
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -150,6 +152,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   HealthCoolDownSec: 0.5
+--- !u!114 &1487878468555393033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398112947300807347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118b8dd30d1af44d592642c417e26139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReloadTimeSec: 2
+  CoolDownTimeSec: 0.5
+  MaxAmmo: 1
+  ProjectilePrefab: {fileID: 3280160328661037046, guid: 5e5b6cff92a25b44bae77580bdf93fcb,
+    type: 3}
 --- !u!1 &398112947826827835
 GameObject:
   m_ObjectHideFlags: 0

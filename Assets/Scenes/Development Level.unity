@@ -5495,6 +5495,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hero
       objectReference: {fileID: 0}
+    - target: {fileID: 9001907900422162122, guid: a45a55db26b513749b990e30726125cb,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001907900422162122, guid: a45a55db26b513749b990e30726125cb,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a45a55db26b513749b990e30726125cb, type: 3}
 --- !u!1 &2038969880
@@ -5920,6 +5930,16 @@ PrefabInstance:
       propertyPath: _pathFinder
       value: 
       objectReference: {fileID: 198557627}
+    - target: {fileID: 398112947300807349, guid: e4c1e3c5af38bc64c82546b9b5ab1e25,
+        type: 3}
+      propertyPath: MaxAttackDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 398112947300807349, guid: e4c1e3c5af38bc64c82546b9b5ab1e25,
+        type: 3}
+      propertyPath: DrawPath
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4c1e3c5af38bc64c82546b9b5ab1e25, type: 3}
 --- !u!1001 &641570705194331899
