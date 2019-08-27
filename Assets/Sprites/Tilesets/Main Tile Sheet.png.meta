@@ -443,6 +443,12 @@ TextureImporter:
   - first:
       213: -7522196176825258215
     second: TileSheet_146
+  - first:
+      213: 2580776785715615997
+    second: Floor_Interactable_1
+  - first:
+      213: 5916997356927446154
+    second: Floor_Interactable_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -3621,6 +3627,48 @@ TextureImporter:
       bones: []
       spriteID: 4139343fb5f71a042916dcea9e68941f
       internalID: -7522196176825258215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Interactable_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c91d910eb81b94cbd4ce0b94a5ecc7
+      internalID: 2580776785715615997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Interactable_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd67b60d70e5cad4185ce2654f12d1b4
+      internalID: 5916997356927446154
       vertices: []
       indices: 
       edges: []
