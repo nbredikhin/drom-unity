@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            SendMessage("Attack", _previousMovementDirection);
+            SendMessage("Attack", _mouseDirection);
         }
 
         if (_movementDirection.magnitude != 0)
