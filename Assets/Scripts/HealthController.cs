@@ -12,6 +12,8 @@ public class HealthController : MonoBehaviour
 
     float health;
 
+    public SpriteRenderer FlashingSprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,11 @@ public class HealthController : MonoBehaviour
         if (Time.realtimeSinceStartup - coolDownStart >= HealthCoolDownSec)
         {
             coolingDown = false;
+        }
+
+        if (FlashingSprite != null)
+        {
+            FlashingSprite.enabled = Mathf.Repeat(Time.time, 0.2f) > 0.1f || !coolingDown;
         }
     }
 

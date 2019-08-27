@@ -38,7 +38,14 @@ public class PlayerController : MonoBehaviour
 
     private bool _isDashAvailable = true;
     private bool _isDashActive;
+    public bool IsDashing => _isDashActive;
     private Vector2 _dashDirection;
+
+    public string[] dashIgnoredLayerNames;
+    private int[] dashIgnoredLayers;
+    private int playerLayer;
+
+    public ParticleSystem _particleSystem;
 
     private void Awake()
     {
@@ -46,6 +53,16 @@ public class PlayerController : MonoBehaviour
         {
             rb = gameObject.GetComponent<Rigidbody2D>();
         }
+
+        dashIgnoredLayers = new int[dashIgnoredLayerNames.Length];
+        for (int i = 0; i < dashIgnoredLayerNames.Length; i++)
+        {
+            dashIgnoredLayers[i] = LayerMask.NameToLayer(dashIgnoredLayerNames[i]);
+        }
+        playerLayer = LayerMask.NameToLayer("Player");
+
+        var emission = _particleSystem.emission;
+        emission.enabled = false;
     }
 
     void Update()
@@ -56,10 +73,21 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Dash(Vector2 direction)
     {
+        var emission = _particleSystem.emission;
+        foreach (int layer in dashIgnoredLayers)
+        {
+            Physics2D.IgnoreLayerCollision(playerLayer, layer, true);
+        }
+        emission.enabled = true;
         _isDashAvailable = false;
         _isDashActive = true;
         _dashDirection = direction.normalized;
         yield return new WaitForSeconds(DASH_DURATION);
+        foreach (int layer in dashIgnoredLayers)
+        {
+            Physics2D.IgnoreLayerCollision(playerLayer, layer, false);
+        }
+        emission.enabled = false;
         _isDashActive = false;
         yield return new WaitForSeconds(DASH_COOLDOWN);
         _isDashAvailable = true;

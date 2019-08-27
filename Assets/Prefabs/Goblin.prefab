@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   HealthCoolDownSec: 0.5
+  FlashingSprite: {fileID: 398112947826827837}
 --- !u!114 &8362024426138792163
 MonoBehaviour:
   m_ObjectHideFlags: 0

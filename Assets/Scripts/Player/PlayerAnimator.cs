@@ -32,6 +32,7 @@ public class PlayerAnimator : MonoBehaviour
             anim.SetFloat("Vertical", pc.MovementDirection.normalized.y);
         }
 
-        anim.SetFloat("Speed",pc.MovementSpeed);
+        anim.SetFloat("Speed", pc.MovementSpeed);
+        anim.SetBool("Dashing", pc.IsDashing);
     }
 }
