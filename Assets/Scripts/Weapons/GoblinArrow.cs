@@ -35,11 +35,15 @@ public class GoblinArrow : MonoBehaviour
         isShooting = true;
         transform.Rotate(0, 0, 90);
         transform.parent.SendMessage("DoneShooting");
-        GetComponent<Rigidbody2D>().velocity = direction;
+        transform.position = transform.parent.position;
+        transform.parent = null;
+        GetComponent<Rigidbody2D>().velocity = direction.normalized * TravelSpeed;
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
+        Debug.Log(collider.name);
+
         collider.SendMessage("DecreaseHealth", Damage, SendMessageOptions.DontRequireReceiver);
         collider.SendMessage("KnockBack",
                              new Vector2(transform.up.x, transform.up.y) * KnockBackForce,
