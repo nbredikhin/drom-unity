@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(StateBroadcaster))]
 public class LeverController : MonoBehaviour
 {
-    public GameObject[] messageReceivers;
-    public string messageName;
     public Animator animator;
     public float delay = 0.0f;
 
     public bool state = false;
+    private StateBroadcaster stateBroadcaster;
 
     void Start()
     {
@@ -17,25 +17,18 @@ public class LeverController : MonoBehaviour
         {
             animator = GetComponent<Animator>();
         }
-    }
 
-    IEnumerator SendMessagesCoroutine()
-    {
-        yield return new WaitForSeconds(delay);
+        stateBroadcaster = GetComponent<StateBroadcaster>();
 
-        foreach (var go in messageReceivers)
-        {
-            go.SendMessage(messageName, state);
-        }
+        animator.SetBool("State", state);
+        stateBroadcaster.BroadcastState(state, delay);
     }
 
     void OnInteract()
     {
         state = !state;
-        if (animator != null)
-        {
-            animator.SetBool("State", state);
-        }
-        StartCoroutine(SendMessagesCoroutine());
+
+        animator.SetBool("State", state);
+        stateBroadcaster.BroadcastState(state, delay);
     }
 }

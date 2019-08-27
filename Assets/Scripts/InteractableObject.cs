@@ -16,8 +16,8 @@ public class InteractableObject : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            Debug.Log("Press E to activate");
             isPlayerNear = true;
+            GameObject.Find("Canvas").BroadcastMessage("ShowInteractionSuggestion", this.gameObject);
         }
     }
 
@@ -26,6 +26,7 @@ public class InteractableObject : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             isPlayerNear = false;
+            GameObject.Find("Canvas").BroadcastMessage("HideInteractionSuggestion", this.gameObject);
         }
     }
 }

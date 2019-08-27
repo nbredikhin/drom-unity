@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8797263560732188624}
   - component: {fileID: 8797263560732188627}
   - component: {fileID: 8797263560732188626}
+  - component: {fileID: 2874567412618098639}
   - component: {fileID: 8797263560732188625}
   - component: {fileID: 8797263560732188622}
   m_Layer: 8
@@ -116,6 +117,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb31db1228e1914789525f511e41471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2874567412618098639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8797263560732188628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79366d93828e7bb40ac802f65d350f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageReceivers: []
+  messageName: 
 --- !u!114 &8797263560732188625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,10 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c60aa3ef65e2954c8b8abd0326dc778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messageReceivers:
-  - {fileID: 0}
-  - {fileID: 0}
-  messageName: SetOpened
   animator: {fileID: 8797263560732188627}
   delay: 0
   state: 0

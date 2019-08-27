@@ -11,6 +11,9 @@ public class DoorController : MonoBehaviour
     public GameObject nextCamera;
     public bool isFrontDoor = true;
 
+    public bool _isOpened = false;
+    public bool _isLocked = false;
+
     void Awake()
     {
         var sprites = GetComponentsInChildren<SpriteRenderer>();
@@ -27,12 +30,24 @@ public class DoorController : MonoBehaviour
             }
         }
 
-        doorAnimator.SetBool("IsOpened", false);
+        SetOpened(_isOpened);
+        SetLocked(_isLocked);
     }
 
     void SetOpened(bool state)
     {
-        doorAnimator.SetBool("IsOpened", state);
+        _isOpened = state;
+        doorAnimator.SetBool("IsOpened", _isOpened && !_isLocked);
+    }
+
+    void SetLocked(bool state)
+    {
+        _isLocked = state;
+        doorAnimator.SetBool("IsOpened", _isOpened && !_isLocked);
+
+        transform.Find("Locked").GetComponent<SpriteRenderer>().enabled = _isLocked && isFrontDoor;
+        transform.Find("Locked Outer").GetComponent<SpriteRenderer>().enabled = _isLocked && !isFrontDoor;
+        transform.Find("Light Sprite").gameObject.SetActive(!_isLocked);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
