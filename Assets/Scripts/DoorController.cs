@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 using UnityEditor;
 
 public class DoorController : MonoBehaviour
 {
+    public SceneAsset nextLevel;
     public Animator doorAnimator;
     public GameObject exitGameObject;
     public GameObject nextCamera;
@@ -55,18 +57,30 @@ public class DoorController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (exitGameObject && collider.gameObject.tag == "Player")
+        if (collider.gameObject.tag != "Player")
         {
-            collider.gameObject.transform.position = exitGameObject.transform.position;
-            foreach (var camera in GameObject.FindGameObjectsWithTag("Camera"))
-            {
-                if (camera != nextCamera)
-                {
-                    camera.SetActive(false);
-                }
-            }
-            nextCamera.SetActive(true);
+            return;
         }
+        if (nextLevel != null)
+        {
+            SceneManager.LoadScene(nextLevel.name);
+        }
+        else
+        {
+            if (exitGameObject)
+            {
+                collider.gameObject.transform.position = exitGameObject.transform.position;
+                foreach (var camera in GameObject.FindGameObjectsWithTag("Camera"))
+                {
+                    if (camera != nextCamera)
+                    {
+                        camera.SetActive(false);
+                    }
+                }
+                nextCamera.SetActive(true);
+            }
+        }
+
     }
 
     private void OnDrawGizmos()
