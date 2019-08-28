@@ -24,4 +24,9 @@ public class GoblinAnimator : MonoBehaviour
             spriteAnimator.SetFloat("Vertical", velocity.y);
         }
     }
+
+    void OnDoneShooting()
+    {
+        spriteAnimator.SetTrigger("OnAttack");
+    }
 }

@@ -64,196 +64,196 @@ TextureImporter:
     second: Goblin_19
   - first:
       213: 2883100367355995488
-    second: Goblin_20
+    second: AttackDownRight_1
   - first:
       213: 1339987815390419552
-    second: Goblin_21
+    second: AttackDownRight_2
   - first:
       213: -6310918314452132059
-    second: Goblin_22
+    second: AttackDownRight_3
   - first:
       213: 1739241052919130783
-    second: Goblin_23
+    second: AttackDownRight_4
   - first:
       213: -8005479226253832512
-    second: Goblin_24
+    second: AttackDownRight_5
   - first:
       213: -5190977205365140737
-    second: Goblin_25
+    second: AttackDownRight_6
   - first:
       213: 2500060783119687262
-    second: Goblin_26
+    second: AttackDownRight_7
   - first:
       213: 1622535340681119640
-    second: Goblin_27
+    second: AttackDownLeft_1
   - first:
       213: -8209790046853751512
-    second: Goblin_28
+    second: AttackDownLeft_2
   - first:
       213: -8009617909464841280
-    second: Goblin_29
+    second: AttackDownLeft_3
   - first:
       213: 6332497213704382148
-    second: Goblin_30
+    second: AttackDownLeft_4
   - first:
       213: -5379714721272170154
-    second: Goblin_31
+    second: AttackDownLeft_5
   - first:
       213: 4281332773599134743
-    second: Goblin_32
+    second: AttackDownLeft_6
   - first:
       213: 9056943577523586822
-    second: Goblin_33
+    second: AttackDownLeft_7
   - first:
       213: 2068521140319348279
-    second: Goblin_34
+    second: AttackUpRight_1
   - first:
       213: -5381767785105657707
-    second: Goblin_35
+    second: AttackUpRight_2
   - first:
       213: -8192899111340851506
-    second: Goblin_36
+    second: AttackUpRight_3
   - first:
       213: -3780074030495910383
-    second: Goblin_37
+    second: AttackUpRight_4
   - first:
       213: -5875507535758309397
-    second: Goblin_38
+    second: AttackUpRight_5
   - first:
       213: 1408599076990084472
-    second: Goblin_39
+    second: AttackUpRight_6
   - first:
       213: -8373848742844680498
-    second: Goblin_40
+    second: AttackUpRight_7
   - first:
       213: -3738408245580447762
-    second: Goblin_41
+    second: AttackUpLeft_1
   - first:
       213: -9219448548696818258
-    second: Goblin_42
+    second: AttackUpLeft_2
   - first:
       213: -1949724708454586231
-    second: Goblin_43
+    second: AttackUpLeft_3
   - first:
       213: 1972958967194268141
-    second: Goblin_44
+    second: AttackUpLeft_4
   - first:
       213: -322034068773617115
-    second: Goblin_45
+    second: AttackUpLeft_5
   - first:
       213: -426320165081776816
-    second: Goblin_46
+    second: AttackUpLeft_6
   - first:
       213: 9180859044465792907
-    second: Goblin_47
+    second: AttackUpLeft_7
   - first:
       213: 5214246034733564736
-    second: Goblin_48
+    second: DamageDownRight_1
   - first:
       213: -6258872510836496282
-    second: Goblin_49
+    second: DamageDownRight_2
   - first:
       213: -1426683980087672
-    second: Goblin_50
+    second: DamageDownRight_3
   - first:
       213: 1163170154034632607
-    second: Goblin_51
+    second: DamageDownRight_4
   - first:
       213: -8548841453389217144
-    second: Goblin_52
+    second: DamageDownLeft_1
   - first:
       213: -2885045436964105927
-    second: Goblin_53
+    second: DamageDownLeft_2
   - first:
       213: 4050912823667823140
-    second: Goblin_54
+    second: DamageDownLeft_3
   - first:
       213: -4714146753349427622
-    second: Goblin_55
+    second: DamageDownLeft_4
   - first:
       213: -2417551796105787640
-    second: Goblin_56
+    second: DamageUpRight_1
   - first:
       213: 7941878417194324828
-    second: Goblin_57
+    second: DamageUpRight_2
   - first:
       213: -6717379769662154747
-    second: Goblin_58
+    second: DamageUpRight_3
   - first:
       213: -3959383320217457934
-    second: Goblin_59
+    second: DamageUpRight_5
   - first:
       213: 731768194823785519
-    second: Goblin_60
+    second: DamageUpLeft_1
   - first:
       213: 1370904390658318611
-    second: Goblin_61
+    second: DamageUpLeft_2
   - first:
       213: 2224300927675112321
-    second: Goblin_62
+    second: DamageUpLeft_3
   - first:
       213: -3152556834889092544
-    second: Goblin_63
+    second: DamageUpLeft_4
   - first:
       213: -5069209791034526323
-    second: Goblin_64
+    second: DeathDownRight_1
   - first:
       213: 1230184754037511766
-    second: Goblin_65
+    second: DeathDownRight_2
   - first:
       213: 1652735160725304206
-    second: Goblin_66
+    second: DeathDownRight_3
   - first:
       213: -7261395390739398712
-    second: Goblin_67
+    second: DeathDownRight_4
   - first:
       213: 5486679082850966946
-    second: Goblin_68
+    second: DeathDownRight_5
   - first:
       213: -3396288045309850867
-    second: Goblin_69
+    second: DeathDownLeft_1
   - first:
       213: 2958974506784005653
-    second: Goblin_70
+    second: DeathDownLeft_2
   - first:
       213: -4938214157893880491
-    second: Goblin_71
+    second: DeathDownLeft_3
   - first:
       213: 5247220051351579186
-    second: Goblin_72
+    second: DeathDownLeft_4
   - first:
       213: -8153115147036807950
-    second: Goblin_73
+    second: DeathDownLeft_5
   - first:
       213: 2344876996396587654
-    second: Goblin_74
+    second: DeathUpRight_1
   - first:
       213: 7930027696965894321
-    second: Goblin_75
+    second: DeathUpRight_2
   - first:
       213: -1633633709326812191
-    second: Goblin_76
+    second: DeathUpRight_3
   - first:
       213: 8597153758104924671
-    second: Goblin_77
+    second: DeathUpRight_4
   - first:
       213: -5622533421398659896
-    second: Goblin_78
+    second: DeathUpRight_5
   - first:
       213: -2657517017785172087
-    second: Goblin_79
+    second: DeathUpLeft_1
   - first:
       213: -47919328897456123
-    second: Goblin_80
+    second: DeathUpLeft_2
   - first:
       213: 1844751620009235364
-    second: Goblin_81
+    second: DeathUpLeft_3
   - first:
       213: -4375453491608087636
-    second: Goblin_82
+    second: DeathUpLeft_4
   - first:
       213: -6085715327884422161
-    second: Goblin_83
+    second: DeathUpLeft_5
   - first:
       213: -7414948562994055664
     second: Goblin_84
@@ -367,7 +367,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,7 +388,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,7 +409,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,7 +430,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,7 +451,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,7 +472,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,7 +493,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -514,7 +514,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,7 +535,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -556,7 +556,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,7 +577,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,7 +598,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,7 +619,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -640,7 +640,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -661,7 +661,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -682,7 +682,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -703,7 +703,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -724,7 +724,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -745,7 +745,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -766,7 +766,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -779,7 +779,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_20
+      name: AttackDownRight_1
       rect:
         serializedVersion: 2
         x: 0
@@ -787,7 +787,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -800,7 +800,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_21
+      name: AttackDownRight_2
       rect:
         serializedVersion: 2
         x: 16
@@ -808,7 +808,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -821,7 +821,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_22
+      name: AttackDownRight_3
       rect:
         serializedVersion: 2
         x: 32
@@ -829,7 +829,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -842,7 +842,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_23
+      name: AttackDownRight_4
       rect:
         serializedVersion: 2
         x: 48
@@ -850,7 +850,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -863,7 +863,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_24
+      name: AttackDownRight_5
       rect:
         serializedVersion: 2
         x: 64
@@ -871,7 +871,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -884,7 +884,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_25
+      name: AttackDownRight_6
       rect:
         serializedVersion: 2
         x: 80
@@ -892,7 +892,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -905,7 +905,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_26
+      name: AttackDownRight_7
       rect:
         serializedVersion: 2
         x: 96
@@ -913,7 +913,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -926,7 +926,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_27
+      name: AttackDownLeft_1
       rect:
         serializedVersion: 2
         x: 0
@@ -934,7 +934,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -947,7 +947,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_28
+      name: AttackDownLeft_2
       rect:
         serializedVersion: 2
         x: 16
@@ -955,7 +955,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -968,7 +968,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_29
+      name: AttackDownLeft_3
       rect:
         serializedVersion: 2
         x: 32
@@ -976,7 +976,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -989,7 +989,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_30
+      name: AttackDownLeft_4
       rect:
         serializedVersion: 2
         x: 48
@@ -997,7 +997,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1010,7 +1010,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_31
+      name: AttackDownLeft_5
       rect:
         serializedVersion: 2
         x: 64
@@ -1018,7 +1018,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1031,7 +1031,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_32
+      name: AttackDownLeft_6
       rect:
         serializedVersion: 2
         x: 80
@@ -1039,7 +1039,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1052,7 +1052,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_33
+      name: AttackDownLeft_7
       rect:
         serializedVersion: 2
         x: 96
@@ -1060,7 +1060,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1073,7 +1073,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_34
+      name: AttackUpRight_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1081,7 +1081,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1094,7 +1094,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_35
+      name: AttackUpRight_2
       rect:
         serializedVersion: 2
         x: 16
@@ -1102,7 +1102,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1115,7 +1115,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_36
+      name: AttackUpRight_3
       rect:
         serializedVersion: 2
         x: 32
@@ -1123,7 +1123,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1136,7 +1136,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_37
+      name: AttackUpRight_4
       rect:
         serializedVersion: 2
         x: 48
@@ -1144,7 +1144,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1157,7 +1157,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_38
+      name: AttackUpRight_5
       rect:
         serializedVersion: 2
         x: 64
@@ -1165,7 +1165,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1178,7 +1178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_39
+      name: AttackUpRight_6
       rect:
         serializedVersion: 2
         x: 80
@@ -1186,7 +1186,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1199,7 +1199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_40
+      name: AttackUpRight_7
       rect:
         serializedVersion: 2
         x: 96
@@ -1207,7 +1207,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1220,7 +1220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_41
+      name: AttackUpLeft_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1228,7 +1228,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1241,7 +1241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_42
+      name: AttackUpLeft_2
       rect:
         serializedVersion: 2
         x: 16
@@ -1249,7 +1249,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1262,7 +1262,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_43
+      name: AttackUpLeft_3
       rect:
         serializedVersion: 2
         x: 32
@@ -1270,7 +1270,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1283,7 +1283,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_44
+      name: AttackUpLeft_4
       rect:
         serializedVersion: 2
         x: 48
@@ -1291,7 +1291,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1304,7 +1304,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_45
+      name: AttackUpLeft_5
       rect:
         serializedVersion: 2
         x: 64
@@ -1312,7 +1312,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1325,7 +1325,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_46
+      name: AttackUpLeft_6
       rect:
         serializedVersion: 2
         x: 80
@@ -1333,7 +1333,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1346,7 +1346,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_47
+      name: AttackUpLeft_7
       rect:
         serializedVersion: 2
         x: 96
@@ -1354,7 +1354,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1367,7 +1367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_48
+      name: DamageDownRight_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1375,7 +1375,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1388,7 +1388,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_49
+      name: DamageDownRight_2
       rect:
         serializedVersion: 2
         x: 16
@@ -1396,7 +1396,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1409,7 +1409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_50
+      name: DamageDownRight_3
       rect:
         serializedVersion: 2
         x: 32
@@ -1417,7 +1417,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1430,7 +1430,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_51
+      name: DamageDownRight_4
       rect:
         serializedVersion: 2
         x: 48
@@ -1438,7 +1438,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1451,7 +1451,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_52
+      name: DamageDownLeft_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1459,7 +1459,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1472,7 +1472,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_53
+      name: DamageDownLeft_2
       rect:
         serializedVersion: 2
         x: 16
@@ -1480,7 +1480,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1493,7 +1493,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_54
+      name: DamageDownLeft_3
       rect:
         serializedVersion: 2
         x: 32
@@ -1501,7 +1501,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1514,7 +1514,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_55
+      name: DamageDownLeft_4
       rect:
         serializedVersion: 2
         x: 48
@@ -1522,7 +1522,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1535,7 +1535,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_56
+      name: DamageUpRight_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1543,7 +1543,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1556,7 +1556,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_57
+      name: DamageUpRight_2
       rect:
         serializedVersion: 2
         x: 16
@@ -1564,7 +1564,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1577,7 +1577,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_58
+      name: DamageUpRight_3
       rect:
         serializedVersion: 2
         x: 32
@@ -1585,7 +1585,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1598,7 +1598,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_59
+      name: DamageUpRight_5
       rect:
         serializedVersion: 2
         x: 48
@@ -1606,7 +1606,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1619,7 +1619,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_60
+      name: DamageUpLeft_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1627,7 +1627,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1640,7 +1640,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_61
+      name: DamageUpLeft_2
       rect:
         serializedVersion: 2
         x: 16
@@ -1648,7 +1648,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1661,7 +1661,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_62
+      name: DamageUpLeft_3
       rect:
         serializedVersion: 2
         x: 32
@@ -1669,7 +1669,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1682,7 +1682,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_63
+      name: DamageUpLeft_4
       rect:
         serializedVersion: 2
         x: 48
@@ -1690,7 +1690,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1703,7 +1703,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_64
+      name: DeathDownRight_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1711,7 +1711,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1724,7 +1724,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_65
+      name: DeathDownRight_2
       rect:
         serializedVersion: 2
         x: 16
@@ -1732,7 +1732,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1745,7 +1745,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_66
+      name: DeathDownRight_3
       rect:
         serializedVersion: 2
         x: 32
@@ -1753,7 +1753,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1766,7 +1766,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_67
+      name: DeathDownRight_4
       rect:
         serializedVersion: 2
         x: 48
@@ -1774,7 +1774,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1787,7 +1787,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_68
+      name: DeathDownRight_5
       rect:
         serializedVersion: 2
         x: 64
@@ -1795,7 +1795,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1808,7 +1808,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_69
+      name: DeathDownLeft_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1816,7 +1816,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1829,7 +1829,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_70
+      name: DeathDownLeft_2
       rect:
         serializedVersion: 2
         x: 16
@@ -1837,7 +1837,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1850,7 +1850,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_71
+      name: DeathDownLeft_3
       rect:
         serializedVersion: 2
         x: 32
@@ -1858,7 +1858,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1871,7 +1871,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_72
+      name: DeathDownLeft_4
       rect:
         serializedVersion: 2
         x: 48
@@ -1879,7 +1879,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1892,7 +1892,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_73
+      name: DeathDownLeft_5
       rect:
         serializedVersion: 2
         x: 64
@@ -1900,7 +1900,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1913,7 +1913,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_74
+      name: DeathUpRight_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1921,7 +1921,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1934,7 +1934,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_75
+      name: DeathUpRight_2
       rect:
         serializedVersion: 2
         x: 16
@@ -1942,7 +1942,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1955,7 +1955,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_76
+      name: DeathUpRight_3
       rect:
         serializedVersion: 2
         x: 32
@@ -1963,7 +1963,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1976,7 +1976,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_77
+      name: DeathUpRight_4
       rect:
         serializedVersion: 2
         x: 48
@@ -1984,7 +1984,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1997,7 +1997,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_78
+      name: DeathUpRight_5
       rect:
         serializedVersion: 2
         x: 64
@@ -2005,7 +2005,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2018,7 +2018,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_79
+      name: DeathUpLeft_1
       rect:
         serializedVersion: 2
         x: 0
@@ -2026,7 +2026,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2039,7 +2039,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_80
+      name: DeathUpLeft_2
       rect:
         serializedVersion: 2
         x: 16
@@ -2047,7 +2047,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2060,7 +2060,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_81
+      name: DeathUpLeft_3
       rect:
         serializedVersion: 2
         x: 32
@@ -2068,7 +2068,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2081,7 +2081,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_82
+      name: DeathUpLeft_4
       rect:
         serializedVersion: 2
         x: 48
@@ -2089,7 +2089,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2102,7 +2102,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_83
+      name: DeathUpLeft_5
       rect:
         serializedVersion: 2
         x: 64
@@ -2110,7 +2110,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2131,7 +2131,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2152,7 +2152,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2173,7 +2173,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

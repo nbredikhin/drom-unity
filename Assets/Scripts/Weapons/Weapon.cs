@@ -84,6 +84,7 @@ public class Weapon : MonoBehaviour
 
     void DoneShooting()
     {
+        SendMessage("OnDoneShooting");
         doneShooting = true;
     }
 
