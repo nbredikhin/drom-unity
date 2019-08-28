@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class GoblinAnimator : MonoBehaviour
 {
-    private GoblinController goblinController;
+    private EnemyController goblinController;
     public Animator spriteAnimator;
 
     void Start()
     {
-        goblinController = GetComponent<GoblinController>();
+        goblinController = GetComponent<EnemyController>();
     }
 
     // Update is called once per frame
