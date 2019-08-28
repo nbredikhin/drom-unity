@@ -8,13 +8,12 @@ using UnityEditor;
 public class DoorController : MonoBehaviour
 {
     public SceneAsset nextLevel;
+    public RoomController nextRoom;
     public Animator doorAnimator;
-    public GameObject exitGameObject;
-    public GameObject nextCamera;
     public bool isFrontDoor = true;
 
-    public bool _isOpened = false;
-    public bool _isLocked = false;
+    [SerializeField] private bool _isOpened = false;
+    [SerializeField] private bool _isLocked = false;
 
     void Awake()
     {
@@ -38,14 +37,14 @@ public class DoorController : MonoBehaviour
         doorAnimator.speed = 100;
     }
 
-    void SetOpened(bool state)
+    public void SetOpened(bool state)
     {
         _isOpened = state;
         doorAnimator.SetBool("IsOpened", _isOpened && !_isLocked);
         doorAnimator.speed = 1;
     }
 
-    void SetLocked(bool state)
+    public void SetLocked(bool state)
     {
         _isLocked = state;
         doorAnimator.SetBool("IsOpened", _isOpened && !_isLocked);
@@ -65,27 +64,9 @@ public class DoorController : MonoBehaviour
         {
             SceneManager.LoadScene(nextLevel.name);
         }
-        else
+        else if (nextRoom != null)
         {
-            if (exitGameObject)
-            {
-                collider.gameObject.transform.position = exitGameObject.transform.position;
-                foreach (var camera in GameObject.FindGameObjectsWithTag("Camera"))
-                {
-                    if (camera != nextCamera)
-                    {
-                        camera.SetActive(false);
-                    }
-                }
-                nextCamera.SetActive(true);
-            }
+            RoomController.SetActiveRoom(nextRoom);
         }
-
-    }
-
-    private void OnDrawGizmos()
-    {
-        if (exitGameObject != null)
-            Debug.DrawLine(this.transform.position, exitGameObject.transform.position, Color.blue);
     }
 }
