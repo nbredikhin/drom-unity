@@ -35,6 +35,7 @@ public class EnemyController : MonoBehaviour
     public float MaxAttackDistance = 0.2f;
 
     public Vector2 MovementVelocity;
+    private bool isDying;
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +74,8 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDying) return;
+
         MovementVelocity = Vector2.zero;
 
         if (_target == null) return;
@@ -178,6 +181,7 @@ public class EnemyController : MonoBehaviour
 
     void PrepareForAttack()
     {
+        if (isDying) return;
         if (attacking)
         {
             return;
@@ -189,11 +193,13 @@ public class EnemyController : MonoBehaviour
 
     void AttackUnit(Vector2 targetDirection)
     {
+        if (isDying) return;
         SendMessage("Attack", targetDirection);
     }
 
     void KnockBack(Vector2 direction)
     {
+        if (isDying) return;
         knockedBack = true;
         knockBackStart = Time.time;
 
@@ -202,7 +208,8 @@ public class EnemyController : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("I'm " + gameObject.name + " dead!");
-        Destroy(gameObject);
+        isDying = true;
+        Debug.Log("I'm " + gameObject.name + " dying!");
+        Destroy(gameObject, 3.0f);
     }
 }

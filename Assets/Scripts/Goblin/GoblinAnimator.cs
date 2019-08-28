@@ -17,7 +17,7 @@ public class GoblinAnimator : MonoBehaviour
     {
         var velocity = goblinController.MovementVelocity;
         var speed = velocity.magnitude;
-        spriteAnimator.SetFloat("Speed", speed);
+        spriteAnimator.SetBool("IsWalking", speed > 0.1);
         if (speed > 0.1)
         {
             spriteAnimator.SetFloat("Horizontal", velocity.x);
@@ -25,8 +25,13 @@ public class GoblinAnimator : MonoBehaviour
         }
     }
 
-    void OnDoneShooting()
+    void Attack()
     {
         spriteAnimator.SetTrigger("OnAttack");
+    }
+
+    void Die()
+    {
+        spriteAnimator.SetTrigger("OnDeath");
     }
 }

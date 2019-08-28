@@ -40,7 +40,7 @@ public class HealthController : MonoBehaviour
 
     void DecreaseHealth(float value)
     {
-        if (coolingDown)
+        if (coolingDown || health <= 0)
         {
             return;
         }
@@ -49,6 +49,7 @@ public class HealthController : MonoBehaviour
         Debug.Log("Got hit, now have " + health + " HP");
         if (health <= 0)
         {
+            health = 0;
             SendMessage("Die");
             return;
         }

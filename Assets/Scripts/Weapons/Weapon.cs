@@ -84,7 +84,7 @@ public class Weapon : MonoBehaviour
 
     void DoneShooting()
     {
-        SendMessage("OnDoneShooting");
+        SendMessage("OnDoneShooting", SendMessageOptions.DontRequireReceiver);
         doneShooting = true;
     }
 
