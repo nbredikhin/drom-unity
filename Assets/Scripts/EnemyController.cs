@@ -34,6 +34,7 @@ public class EnemyController : MonoBehaviour
     public float MaxAttackDistance = 0.2f;
 
     public Vector2 lookDirection;
+    public Vector2 forceLookDirection = Vector2.zero;
     private bool isDying;
 
     public bool isFollowingEnabled = true;
@@ -82,8 +83,6 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         if (isDying) return;
-
-        lookDirection = Vector2.zero;
 
         if (target == null) return;
 
@@ -148,6 +147,11 @@ public class EnemyController : MonoBehaviour
         var direction = targetPosition - currentPosition;
         direction.z = 0;
 
+        lookDirection = direction.normalized;
+        if (forceLookDirection != Vector2.zero)
+            lookDirection = forceLookDirection;
+
+        Debug.Log(isAttackEnabled);
         if (attacking && isAttackEnabled)
         {
             if (Time.time - attackStart >= AttackTime)
@@ -175,7 +179,6 @@ public class EnemyController : MonoBehaviour
         }
         if (direction.magnitude > 0.05f)
         {
-            lookDirection = direction.normalized;
             if (isFollowingEnabled)
             {
                 isWalking = true;

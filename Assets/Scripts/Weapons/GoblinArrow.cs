@@ -37,6 +37,10 @@ public class GoblinArrow : MonoBehaviour
         transform.parent.SendMessage("DoneShooting");
         transform.position = transform.parent.position;
         transform.parent = null;
+        if (direction == Vector2.zero)
+        {
+            direction = Vector2.up;
+        }
         GetComponent<Rigidbody2D>().velocity = direction.normalized * TravelSpeed;
     }
 

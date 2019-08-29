@@ -122,6 +122,12 @@ public class Weapon : MonoBehaviour
                                      transform.position,
                                      q,
                                      transform);
+            var projectileCollider = projectile.GetComponent<Collider2D>();
+            var holderCollider = GetComponent<Collider2D>();
+            if (projectileCollider != null && holderCollider != null)
+            {
+                Physics2D.IgnoreCollision(holderCollider, projectileCollider, true);
+            }
             projectile.SendMessage("LaunchAttack", shootingDirection);
             --currentAmmo;
 

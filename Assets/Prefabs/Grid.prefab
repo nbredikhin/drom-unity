@@ -1134,7 +1134,7 @@ GameObject:
   - component: {fileID: 4878837160257804894}
   - component: {fileID: 4878837160257804895}
   - component: {fileID: 4878837160257804888}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: Death Tiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

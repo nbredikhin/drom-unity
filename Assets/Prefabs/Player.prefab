@@ -4813,7 +4813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MOVEMENT_BASE_SPEED: 30
   DASH_SPEED: 50
-  DASH_DURATION: 0.5
+  DASH_DURATION: 0.6
   DASH_COOLDOWN: 1.2
   _movementSpeed: 0
   _movementDirection: {x: 0, y: 0}
@@ -4823,7 +4823,9 @@ MonoBehaviour:
   dashIgnoredLayerNames:
   - Goblins
   - GoblinWeapons
+  - DeathTiles
   _particleSystem: {fileID: 669679015528015673}
+  enemiesAttackOnClick: 0
 --- !u!114 &9001907900422162117
 MonoBehaviour:
   m_ObjectHideFlags: 0
