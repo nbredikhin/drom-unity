@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -873615163332979421}
   m_Layer: 10
   m_Name: Goblin
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,13 +146,16 @@ MonoBehaviour:
   MOVEMENT_BASE_SPEED: 20
   PathFindObstaclesMask:
     serializedVersion: 2
-    m_Bits: 1280
+    m_Bits: 9472
   DrawPath: 0
   PathColor: {r: 0, g: 1, b: 0, a: 1}
   KnockBackTime: 0.3
   AttackTime: 0.55
   MaxAttackDistance: 0.1
-  MovementVelocity: {x: 0, y: 0}
+  lookDirection: {x: 0, y: 0}
+  isFollowingEnabled: 1
+  isAttackEnabled: 1
+  isWalking: 0
 --- !u!1 &398112947826827835
 GameObject:
   m_ObjectHideFlags: 0

@@ -33,8 +33,13 @@ public class EnemyController : MonoBehaviour
     public float AttackTime = 1.0f;
     public float MaxAttackDistance = 0.2f;
 
-    public Vector2 MovementVelocity;
+    public Vector2 lookDirection;
     private bool isDying;
+
+    public bool isFollowingEnabled = true;
+    public bool isAttackEnabled = true;
+
+    public bool isWalking = false;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +70,10 @@ public class EnemyController : MonoBehaviour
 
         pathUpdateTime = Time.time;
         pathTargetPosition = target.transform.position;
-        currentPath = pathFinder.FindPath(transform.position, pathTargetPosition);
+        if (isFollowingEnabled)
+        {
+            currentPath = pathFinder.FindPath(transform.position, pathTargetPosition);
+        }
         if (currentPath != null)
             currentPathNode = 0;
     }
@@ -75,7 +83,7 @@ public class EnemyController : MonoBehaviour
     {
         if (isDying) return;
 
-        MovementVelocity = Vector2.zero;
+        lookDirection = Vector2.zero;
 
         if (target == null) return;
 
@@ -140,7 +148,7 @@ public class EnemyController : MonoBehaviour
         var direction = targetPosition - currentPosition;
         direction.z = 0;
 
-        if (attacking)
+        if (attacking && isAttackEnabled)
         {
             if (Time.time - attackStart >= AttackTime)
             {
@@ -148,9 +156,12 @@ public class EnemyController : MonoBehaviour
             }
             else
             {
-                if (Mathf.Abs(Time.time - attackStart - AttackTime / 2) <= 2 * Time.deltaTime)
+                if (isAttackEnabled)
                 {
-                    AttackUnit(new Vector2(direction.x, direction.y));
+                    if (Mathf.Abs(Time.time - attackStart - AttackTime / 2) <= 2 * Time.deltaTime)
+                    {
+                        AttackUnit();
+                    }
                 }
                 return;
             }
@@ -164,13 +175,22 @@ public class EnemyController : MonoBehaviour
         }
         if (direction.magnitude > 0.05f)
         {
-            MovementVelocity = direction.normalized * MOVEMENT_BASE_SPEED;
-            rb.velocity = MovementVelocity * Time.deltaTime;
+            lookDirection = direction.normalized;
+            if (isFollowingEnabled)
+            {
+                isWalking = true;
+                rb.velocity = lookDirection * Time.deltaTime;
+            }
+            else
+            {
+                isWalking = false;
+            }
         }
         else
         {
-            MovementVelocity = Vector2.zero;
-            rb.velocity = MovementVelocity;
+            isWalking = false;
+            lookDirection = Vector2.zero;
+            rb.velocity = lookDirection;
             if (currentPath != null && currentPathNode < currentPath.Count - 1)
             {
                 currentPathNode = currentPathNode + 1;
@@ -190,10 +210,10 @@ public class EnemyController : MonoBehaviour
         attackStart = Time.time;
     }
 
-    void AttackUnit(Vector2 targetDirection)
+    public void AttackUnit()
     {
         if (isDying) return;
-        SendMessage("Attack", targetDirection);
+        SendMessage("Attack", lookDirection);
     }
 
     void KnockBack(Vector2 direction)

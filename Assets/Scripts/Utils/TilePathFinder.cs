@@ -59,6 +59,8 @@ public class TilePathFinder : MonoBehaviour
 
         openSet.Add(startNode);
 
+        int iterationsCount = 0;
+
         while (openSet.Count > 0)
         {
             var currentNode = openSet.OrderBy(node => node.EstimateFullPathLength).First();
@@ -83,6 +85,14 @@ public class TilePathFinder : MonoBehaviour
                     openNode.previousNode = currentNode;
                     openNode.pathLengthFromStart = neighbourNode.pathLengthFromStart;
                 }
+            }
+
+            iterationsCount++;
+
+            if (iterationsCount > 500)
+            {
+                Debug.LogError("PathFinder iterations limit reached");
+                return null;
             }
         }
 

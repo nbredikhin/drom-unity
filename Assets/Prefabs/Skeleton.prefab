@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 725527455405233032}
   m_Layer: 10
   m_Name: Skeleton
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,12 +141,13 @@ MonoBehaviour:
     m_Bits: 1280
   DrawPath: 1
   PathColor: {r: 0, g: 1, b: 0, a: 1}
-  rb: {fileID: 0}
-  _pathFinder: {fileID: 0}
   KnockBackTime: 0.3
   AttackTime: 1
   MaxAttackDistance: 1
-  MovementVelocity: {x: 0, y: 0}
+  lookDirection: {x: 0, y: 0}
+  isFollowingEnabled: 1
+  isAttackEnabled: 1
+  isWalking: 0
 --- !u!50 &4486274334058217665
 Rigidbody2D:
   serializedVersion: 4

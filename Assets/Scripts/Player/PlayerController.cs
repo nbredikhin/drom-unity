@@ -47,6 +47,8 @@ public class PlayerController : MonoBehaviour
 
     public ParticleSystem _particleSystem;
 
+    public bool enemiesAttackOnClick = false;
+
     private void Awake()
     {
         if (rb == null)
@@ -112,7 +114,18 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            SendMessage("Attack", _mouseDirection);
+            if (enemiesAttackOnClick)
+            {
+                foreach (var enemy in GameObject.FindObjectsOfType<EnemyController>())
+                {
+                    enemy.AttackUnit();
+                    Debug.Log("Attack " + enemy.gameObject.name);
+                };
+            }
+            else
+            {
+                SendMessage("Attack", _mouseDirection);
+            }
         }
 
         if (_movementDirection.magnitude != 0)
