@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 4486274334058217691}
   - component: {fileID: 4486274334058217669}
   - component: {fileID: 4486274334058217690}
-  - component: {fileID: 4486274334058217668}
   - component: {fileID: 4486274334058217671}
   - component: {fileID: 4486274334058217665}
   - component: {fileID: 4486274334058217670}
   - component: {fileID: 4486274334058217664}
   - component: {fileID: 3445621070274873275}
   - component: {fileID: 725527455405233032}
+  - component: {fileID: 6766046468785382881}
   m_Layer: 10
   m_Name: Skeleton
   m_TagString: Enemy
@@ -108,21 +108,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4486274334058217668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4486274334058217688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a1a70ed8272045b690c0d42ee70ade7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  facingUp: 0
-  facingRight: 0
-  moving: 0
 --- !u!114 &4486274334058217671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,12 +124,13 @@ MonoBehaviour:
   PathFindObstaclesMask:
     serializedVersion: 2
     m_Bits: 1280
-  DrawPath: 1
+  DrawPath: 0
   PathColor: {r: 0, g: 1, b: 0, a: 1}
   KnockBackTime: 0.3
   AttackTime: 1
-  MaxAttackDistance: 1
+  MaxAttackDistance: 0.5
   lookDirection: {x: 0, y: 0}
+  forceLookDirection: {x: 0, y: 0}
   isFollowingEnabled: 1
   isAttackEnabled: 1
   isWalking: 0
@@ -216,7 +202,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   HealthCoolDownSec: 0.5
-  FlashingSprite: {fileID: 4486274334058217669}
 --- !u!210 &725527455405233032
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -228,3 +213,16 @@ SortingGroup:
   m_SortingLayerID: 1609247797
   m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &6766046468785382881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4486274334058217688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ffd8bac5a6b82140b9c73e8249783c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteAnimator: {fileID: 4486274334058217690}

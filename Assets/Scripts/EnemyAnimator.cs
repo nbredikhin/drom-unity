@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoblinAnimator : MonoBehaviour
+public class EnemyAnimator : MonoBehaviour
 {
     private EnemyController goblinController;
     public Animator spriteAnimator;
