@@ -602,16 +602,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8797263560732188624, guid: dd2776a975879cd469bfb79e2ffa81ed,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1609247797
-      objectReference: {fileID: 0}
-    - target: {fileID: 8797263560732188624, guid: dd2776a975879cd469bfb79e2ffa81ed,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2874567412618098639, guid: dd2776a975879cd469bfb79e2ffa81ed,
         type: 3}
       propertyPath: messageReceivers.Array.size
@@ -626,6 +616,16 @@ PrefabInstance:
         type: 3}
       propertyPath: messageName
       value: SetOpened
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797263560732188624, guid: dd2776a975879cd469bfb79e2ffa81ed,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1609247797
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797263560732188624, guid: dd2776a975879cd469bfb79e2ffa81ed,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd2776a975879cd469bfb79e2ffa81ed, type: 3}
@@ -4093,16 +4093,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door 2
       objectReference: {fileID: 0}
-    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
-        type: 3}
-      propertyPath: nextRoom
-      value: 
-      objectReference: {fileID: 517002358}
-    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
-        type: 3}
-      propertyPath: _isLocked
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 641570704876963071, guid: c1ce29f5d083d154ba690b830265d5d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4157,6 +4147,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
+        type: 3}
+      propertyPath: nextRoom
+      value: 
+      objectReference: {fileID: 517002358}
+    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
+        type: 3}
+      propertyPath: _isLocked
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1ce29f5d083d154ba690b830265d5d2, type: 3}
@@ -6577,11 +6577,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 908420128, guid: a45a55db26b513749b990e30726125cb, type: 3}
-      propertyPath: ProjectilePrefab
-      value: 
-      objectReference: {fileID: 566885150880161786, guid: ee7c8d5a579c644978c8850061354f0c,
-        type: 3}
     - target: {fileID: 9001907900422162120, guid: a45a55db26b513749b990e30726125cb,
         type: 3}
       propertyPath: dashIgnoredLayerNames.Array.size
@@ -6592,6 +6587,11 @@ PrefabInstance:
       propertyPath: dashIgnoredLayerNames.Array.data[2]
       value: DeathTiles
       objectReference: {fileID: 0}
+    - target: {fileID: 908420128, guid: a45a55db26b513749b990e30726125cb, type: 3}
+      propertyPath: ProjectilePrefab
+      value: 
+      objectReference: {fileID: 566885150880161786, guid: ee7c8d5a579c644978c8850061354f0c,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a45a55db26b513749b990e30726125cb, type: 3}
 --- !u!1 &1695069499 stripped
@@ -6755,16 +6755,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door Next Level
       objectReference: {fileID: 0}
-    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
-        type: 3}
-      propertyPath: _isLocked
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
-        type: 3}
-      propertyPath: nextLevel
-      value: Level 2
-      objectReference: {fileID: 0}
     - target: {fileID: 641570704876963071, guid: c1ce29f5d083d154ba690b830265d5d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6819,6 +6809,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
+        type: 3}
+      propertyPath: _isLocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
+        type: 3}
+      propertyPath: nextLevel
+      value: Level 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1ce29f5d083d154ba690b830265d5d2, type: 3}
@@ -7059,12 +7059,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -873615163332979421, guid: e4c1e3c5af38bc64c82546b9b5ab1e25,
+    - target: {fileID: 8362024426138792163, guid: e4c1e3c5af38bc64c82546b9b5ab1e25,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8362024426138792163, guid: e4c1e3c5af38bc64c82546b9b5ab1e25,
+    - target: {fileID: -873615163332979421, guid: e4c1e3c5af38bc64c82546b9b5ab1e25,
         type: 3}
       propertyPath: m_Enabled
       value: 1
