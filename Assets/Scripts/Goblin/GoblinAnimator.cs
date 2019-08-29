@@ -29,4 +29,9 @@ public class GoblinAnimator : MonoBehaviour
     {
         spriteAnimator.SetTrigger("OnDeath");
     }
+
+    void OnDamage()
+    {
+        spriteAnimator.SetTrigger("OnHit");
+    }
 }

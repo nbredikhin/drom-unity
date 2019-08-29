@@ -181,7 +181,7 @@ public class EnemyController : MonoBehaviour
             if (isFollowingEnabled)
             {
                 isWalking = true;
-                rb.velocity = lookDirection * Time.deltaTime;
+                rb.velocity = MOVEMENT_BASE_SPEED * lookDirection.normalized * Time.deltaTime;
             }
             else
             {
