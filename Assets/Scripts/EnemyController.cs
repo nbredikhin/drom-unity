@@ -12,12 +12,11 @@ public class EnemyController : MonoBehaviour
     [Space(10)]
 
     [Header("References")]
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
 
-    [SerializeField] private TilePathFinder _pathFinder;
-    public TilePathFinder PathFinder => _pathFinder;
+    private TilePathFinder pathFinder;
 
-    private GameObject _target;
+    private GameObject target;
     private Vector3 pathTargetPosition;
     private List<Vector3> currentPath;
     private float PATH_RECALCULATE_TIME = 2.0f;
@@ -44,12 +43,12 @@ public class EnemyController : MonoBehaviour
         {
             rb = gameObject.GetComponent<Rigidbody2D>();
         }
-        if (_pathFinder == null)
+        if (pathFinder == null)
         {
-            _pathFinder = GameObject.Find("Grid").GetComponent<TilePathFinder>();
+            pathFinder = GameObject.Find("Grid").GetComponent<TilePathFinder>();
         }
 
-        _target = GameObject.Find("Player");
+        target = GameObject.Find("Player");
         RecalculatePath();
     }
 
@@ -58,15 +57,15 @@ public class EnemyController : MonoBehaviour
         // If path was recalculated too recently
         if (pathUpdateTime > 0 && Time.time - pathUpdateTime < PATH_RECALCULATE_TIME)
             return;
-        if (_target == null)
+        if (target == null)
         {
             currentPath = null;
             return;
         }
 
         pathUpdateTime = Time.time;
-        pathTargetPosition = _target.transform.position;
-        currentPath = _pathFinder.FindPath(transform.position, pathTargetPosition);
+        pathTargetPosition = target.transform.position;
+        currentPath = pathFinder.FindPath(transform.position, pathTargetPosition);
         if (currentPath != null)
             currentPathNode = 0;
     }
@@ -78,7 +77,7 @@ public class EnemyController : MonoBehaviour
 
         MovementVelocity = Vector2.zero;
 
-        if (_target == null) return;
+        if (target == null) return;
 
         if (knockedBack)
         {
@@ -92,7 +91,7 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        var targetPosition = _target.transform.position;
+        var targetPosition = target.transform.position;
         var currentPosition = transform.position;
         var raycastDirection = targetPosition - currentPosition;
         raycastDirection.z = 0;
@@ -119,7 +118,7 @@ public class EnemyController : MonoBehaviour
             }
 
             // If target moved far enough to recalculate path
-            if ((pathTargetPosition - _target.transform.position).magnitude > PATH_RECALCULATE_DISTANCE)
+            if ((pathTargetPosition - target.transform.position).magnitude > PATH_RECALCULATE_DISTANCE)
             {
                 RecalculatePath();
             }

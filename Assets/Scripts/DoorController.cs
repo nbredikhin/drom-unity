@@ -7,7 +7,7 @@ using UnityEditor;
 
 public class DoorController : MonoBehaviour
 {
-    public SceneAsset nextLevel;
+    public string nextLevel;
     public RoomController nextRoom;
     public Animator doorAnimator;
     public bool isFrontDoor = true;
@@ -60,9 +60,9 @@ public class DoorController : MonoBehaviour
         {
             return;
         }
-        if (nextLevel != null)
+        if (nextLevel != null && nextLevel.Length > 1)
         {
-            SceneManager.LoadScene(nextLevel.name);
+            SceneManager.LoadScene(nextLevel);
         }
         else if (nextRoom != null)
         {

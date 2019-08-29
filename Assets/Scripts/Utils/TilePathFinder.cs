@@ -25,7 +25,7 @@ public class TilePathFinder : MonoBehaviour
     public Grid grid;
     private List<Tilemap> collisionTilemaps = new List<Tilemap>();
 
-    private void Awake()
+    private void Start()
     {
         if (grid == null)
         {

@@ -34,7 +34,7 @@ public class RoomController : MonoBehaviour
 
         if (isDefaultRoom)
         {
-            ActivateRoom();
+            RoomController.SetActiveRoom(this);
         }
     }
 
@@ -57,11 +57,6 @@ public class RoomController : MonoBehaviour
         }
 
         unlockDoorOnClear.SetLocked(count > 0);
-    }
-
-    public void ActivateRoom()
-    {
-        RoomController.SetActiveRoom(this);
     }
 
     public void SetRoomActive(bool state)
