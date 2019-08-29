@@ -151,7 +151,6 @@ public class EnemyController : MonoBehaviour
         if (forceLookDirection != Vector2.zero)
             lookDirection = forceLookDirection;
 
-        Debug.Log(isAttackEnabled);
         if (attacking && isAttackEnabled)
         {
             if (Time.time - attackStart >= AttackTime)
@@ -232,6 +231,8 @@ public class EnemyController : MonoBehaviour
     {
         isDying = true;
         Debug.Log("I'm " + gameObject.name + " dying!");
+        var collider = GetComponent<Collider2D>();
+        if (collider != null) collider.enabled = false;
         Destroy(gameObject, 3.0f);
     }
 }

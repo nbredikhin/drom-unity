@@ -222,12 +222,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e327386080aba5438dbd629eee5db04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: 
+  nextRoom: {fileID: 0}
   doorAnimator: {fileID: 641570704876963058}
-  exitGameObject: {fileID: 0}
-  nextCamera: {fileID: 0}
   isFrontDoor: 1
-  isOpened: 0
-  isLocked: 0
+  _isOpened: 0
+  _isLocked: 0
 --- !u!95 &641570704876963058
 Animator:
   serializedVersion: 3
