@@ -17,10 +17,7 @@ public class DeathTiles : MonoBehaviour
         var tilemapPosition = tilemap.WorldToCell(collider.gameObject.transform.position);
         if (!tilemap.HasTile(tilemapPosition))
             return;
-        // var health = collider.gameObject.GetComponent<Health>();
-        // if (health == null) return;
 
-        Debug.Log("Kill " + collider.gameObject.name);
-        collider.attachedRigidbody.AddForce(-100f * collider.attachedRigidbody.velocity);
+        collider.gameObject.SendMessage("DecreaseHealth", 10000.0f);
     }
 }

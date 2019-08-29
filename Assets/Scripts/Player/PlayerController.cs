@@ -48,6 +48,9 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem _particleSystem;
 
     public bool enemiesAttackOnClick = false;
+    private bool isDead = false;
+
+    public Vector2 respawnPosition;
 
     private void Awake()
     {
@@ -65,10 +68,13 @@ public class PlayerController : MonoBehaviour
 
         var emission = _particleSystem.emission;
         emission.enabled = false;
+
+        respawnPosition = transform.position;
     }
 
     void Update()
     {
+        if (isDead) return;
         ProcessInput();
         Move();
     }
@@ -154,5 +160,20 @@ public class PlayerController : MonoBehaviour
     void OnArrowFlightEnd()
     {
         Physics2D.IgnoreLayerCollision(playerLayer, LayerMask.NameToLayer("Level"), false);
+    }
+
+    void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+        GameObject.Find("UI").SendMessage("OnPlayerDead");
+    }
+
+    public void Respawn()
+    {
+        var player = Instantiate(gameObject);
+        player.transform.position = respawnPosition;
+        player.GetComponent<PlayerController>().respawnPosition = respawnPosition;
+        Destroy(gameObject);
     }
 }

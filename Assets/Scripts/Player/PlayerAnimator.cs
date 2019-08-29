@@ -35,4 +35,14 @@ public class PlayerAnimator : MonoBehaviour
         anim.SetFloat("Speed", pc.MovementSpeed);
         anim.SetBool("Dashing", pc.IsDashing);
     }
+
+    void Die()
+    {
+        anim.SetTrigger("OnDeath");
+    }
+
+    void OnDamage()
+    {
+        anim.SetTrigger("OnHit");
+    }
 }
