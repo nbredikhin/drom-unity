@@ -41,7 +41,10 @@ public class EnemyController : MonoBehaviour
     public bool isAttackEnabled = true;
 
     public bool isWalking = false;
+    private bool controlledByPlayer;
 
+
+    GameObject sovereign;
     // Start is called before the first frame update
     void Start()
     {
@@ -84,7 +87,15 @@ public class EnemyController : MonoBehaviour
     {
         if (isDying) return;
 
-        if (target == null) return;
+        ProcessInput();
+
+        if (ProcessEnemyStuff()) return;
+    }
+
+    bool ProcessEnemyStuff()
+    {
+        if (controlledByPlayer) return true;
+        if (target == null) return true;
 
         if (knockedBack)
         {
@@ -94,7 +105,7 @@ public class EnemyController : MonoBehaviour
             }
             else
             {
-                return;
+                return true;
             }
         }
 
@@ -121,7 +132,7 @@ public class EnemyController : MonoBehaviour
             {
                 // If it's been too long since last path update, recalculate path
                 if (Time.time - pathUpdateTime > PATH_RECALCULATE_TIME) RecalculatePath();
-                return;
+                return true;
             }
 
             // If target moved far enough to recalculate path
@@ -166,7 +177,7 @@ public class EnemyController : MonoBehaviour
                         AttackUnit();
                     }
                 }
-                return;
+                return true;
             }
         }
 
@@ -174,7 +185,7 @@ public class EnemyController : MonoBehaviour
         if (direction.magnitude < MaxAttackDistance && isPathClear)
         {
             PrepareForAttack();
-            return;
+            return true;
         }
         if (direction.magnitude > 0.05f)
         {
@@ -197,6 +208,43 @@ public class EnemyController : MonoBehaviour
             {
                 currentPathNode = currentPathNode + 1;
             }
+        }
+        return false;
+    }
+
+    void ProcessInput()
+    {
+        if (!controlledByPlayer)
+        {
+            return;
+        }
+        //movement direction processing
+        var _movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        var _movementSpeed = Mathf.Clamp(_movementDirection.magnitude, 0.0f, 1.0f);
+        _movementDirection.Normalize();
+        Debug.Log(_movementDirection + " " + _movementSpeed);
+        rb.velocity = _movementDirection * _movementSpeed * MOVEMENT_BASE_SPEED * Time.deltaTime;
+
+        //mouse direction processing
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        var mouseDirection = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
+        mouseDirection.Normalize();
+
+        if (_movementDirection.magnitude > 0.05f)
+        {
+        
+            isWalking = true;
+            lookDirection = _movementDirection;
+        }
+        else
+        {
+            isWalking = false;
+            lookDirection = Vector2.zero;
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            SendMessage("Attack", mouseDirection);
         }
     }
 
@@ -233,6 +281,24 @@ public class EnemyController : MonoBehaviour
         Debug.Log("I'm " + gameObject.name + " dying!");
         var collider = GetComponent<Collider2D>();
         if (collider != null) collider.enabled = false;
+
+        controlledByPlayer = false;
+        if (sovereign != null)
+        {
+            var pc = sovereign.GetComponent<PlayerController>();
+            if (pc != null)
+            {
+                var camera = GameObject.FindObjectOfType<Cinemachine.CinemachineVirtualCamera>();
+                pc.enabled = true;
+                camera.Follow = pc.gameObject.transform;
+            }
+        }
+
         Destroy(gameObject, 3.0f);
+    }
+
+    void AssumingDirectControl(GameObject source)
+    {
+        controlledByPlayer = true;
     }
 }

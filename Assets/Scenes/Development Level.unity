@@ -2443,10 +2443,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 908420122, guid: a45a55db26b513749b990e30726125cb, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 908420128, guid: a45a55db26b513749b990e30726125cb, type: 3}
       propertyPath: ProjectilePrefab
       value: 
-      objectReference: {fileID: 9018455805265466560, guid: 14eb32568acb31a4ab24e3048c41fdbf,
+      objectReference: {fileID: 6976964110205412019, guid: 93634173e5aa1b842804bdf7f247b3fa,
         type: 3}
     - target: {fileID: 908420122, guid: a45a55db26b513749b990e30726125cb, type: 3}
       propertyPath: m_IsTrigger
@@ -2908,7 +2912,7 @@ PrefabInstance:
     - target: {fileID: 4486274334058217688, guid: 986128127313d496f9103c49cb9d4d96,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4486274334058217691, guid: 986128127313d496f9103c49cb9d4d96,
         type: 3}
