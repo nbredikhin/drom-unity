@@ -1,0 +1,60 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerArrow : MonoBehaviour
+{
+    bool isShooting = false;
+
+    public float TravelSpeed = 1.0f;
+    public float Damage = 10.0f;
+    public float KnockBackForce = 20.0f;
+
+    private GameObject player;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (!isShooting)
+        {
+            return;
+        }
+        player.transform.position = transform.position;
+    }
+
+    void LaunchAttack(Vector2 direction)
+    {
+        if (isShooting)
+        {
+            return;
+        }
+
+        isShooting = true;
+        transform.Rotate(0, 0, 90);
+        player = transform.parent.gameObject;
+        player.SendMessage("OnArrowFlightStart");
+        transform.position = transform.parent.position;
+        transform.parent = null;
+        GetComponent<Rigidbody2D>().velocity = direction.normalized * TravelSpeed;
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.name == "Death Tiles") return;
+        Debug.Log(collider.name);
+
+        collider.SendMessage("DecreaseHealth", Damage, SendMessageOptions.DontRequireReceiver);
+        collider.SendMessage("KnockBack",
+                             new Vector2(transform.up.x, transform.up.y) * KnockBackForce,
+                             SendMessageOptions.DontRequireReceiver);
+        player.SendMessage("OnArrowFlightEnd");
+        player.SendMessage("DoneShooting");
+        Destroy(gameObject);
+    }
+}

@@ -132,4 +132,14 @@ public class PlayerController : MonoBehaviour
             rb.velocity = _movementDirection * _movementSpeed * MOVEMENT_BASE_SPEED * Time.deltaTime;
         }
     }
+
+    void OnArrowFlightStart()
+    {
+        Physics2D.IgnoreLayerCollision(playerLayer, LayerMask.NameToLayer("Level"), true);
+    }
+
+    void OnArrowFlightEnd()
+    {
+        Physics2D.IgnoreLayerCollision(playerLayer, LayerMask.NameToLayer("Level"), false);
+    }
 }

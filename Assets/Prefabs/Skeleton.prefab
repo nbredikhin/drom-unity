@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4486274334058217670}
   - component: {fileID: 4486274334058217664}
   - component: {fileID: 3445621070274873275}
+  - component: {fileID: 725527455405233032}
   m_Layer: 10
   m_Name: Skeleton
   m_TagString: Untagged
@@ -214,4 +215,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   HealthCoolDownSec: 0.5
-  FlashingSprite: {fileID: 0}
+  FlashingSprite: {fileID: 4486274334058217669}
+--- !u!210 &725527455405233032
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4486274334058217688}
+  m_Enabled: 1
+  m_SortingLayerID: 1609247797
+  m_SortingLayer: 1
+  m_SortingOrder: 0
