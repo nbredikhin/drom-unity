@@ -10,7 +10,7 @@ public class HealthController : MonoBehaviour
     bool coolingDown;
     float coolDownStart;
 
-    float health;
+    public float health;
 
     // Start is called before the first frame update
     void Start()

@@ -2,6 +2,7 @@
 
 public class InteractableObject : MonoBehaviour
 {
+    public string readableName;
     private bool isPlayerNear = false;
 
     void Update()
@@ -17,7 +18,7 @@ public class InteractableObject : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             isPlayerNear = true;
-            GameObject.Find("Canvas").BroadcastMessage("ShowInteractionSuggestion", this.gameObject);
+            GameObject.Find("UI").SendMessage("ShowInteractionSuggestion", this);
         }
     }
 
@@ -26,7 +27,7 @@ public class InteractableObject : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             isPlayerNear = false;
-            GameObject.Find("Canvas").BroadcastMessage("HideInteractionSuggestion", this.gameObject);
+            GameObject.Find("UI").SendMessage("HideInteractionSuggestion");
         }
     }
 }

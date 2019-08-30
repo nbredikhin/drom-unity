@@ -176,4 +176,10 @@ public class PlayerController : MonoBehaviour
         player.GetComponent<PlayerController>().respawnPosition = respawnPosition;
         Destroy(gameObject);
     }
+
+    void OnDamage()
+    {
+        var healthController = GetComponent<HealthController>();
+        GameObject.Find("UI").SendMessage("UpdateHealth", healthController.health / healthController.MaxHealth);
+    }
 }

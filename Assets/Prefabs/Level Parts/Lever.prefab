@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb31db1228e1914789525f511e41471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  readableName: lever
 --- !u!114 &2874567412618098639
 MonoBehaviour:
   m_ObjectHideFlags: 0
