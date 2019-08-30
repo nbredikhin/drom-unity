@@ -1076,6 +1076,11 @@ PrefabInstance:
       propertyPath: _isLocked
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
+        type: 3}
+      propertyPath: nextLevel
+      value: Level 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1ce29f5d083d154ba690b830265d5d2, type: 3}
 --- !u!4 &701467724 stripped

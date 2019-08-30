@@ -10,12 +10,45 @@ public class GameUI : MonoBehaviour
     public GameObject interactionText;
     public GameObject hud;
     public Image healthBar;
+    public GameObject pauseScreen;
+
+    public bool isFakePause = false;
+    private bool isGamePaused = false;
 
     void Start()
     {
         deathScreen.SetActive(false);
         interactionText.SetActive(false);
         hud.SetActive(true);
+        pauseScreen.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePause();
+        }
+    }
+
+    public void TogglePause()
+    {
+        if (deathScreen.activeInHierarchy)
+        {
+            return;
+        }
+        isGamePaused = !isGamePaused;
+
+        if (isFakePause)
+        {
+            GameObject.FindObjectOfType<PlayerController>().GetComponent<Collider2D>().enabled = !isGamePaused;
+        }
+        else
+        {
+            Time.timeScale = isGamePaused ? 0 : 1;
+        }
+
+        pauseScreen.SetActive(isGamePaused);
     }
 
     void OnPlayerDead()

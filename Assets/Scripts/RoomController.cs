@@ -50,13 +50,27 @@ public class RoomController : MonoBehaviour
     {
         if (unlockDoorOnClear == null) return;
         int count = 0;
-        foreach (var gameObject in roomEnemies)
+        foreach (var enemy in roomEnemies)
         {
-            if (gameObject != null)
-                count++;
+            if (enemy != null)
+            {
+                var healthController = enemy.GetComponent<HealthController>();
+                if (healthController != null)
+                {
+                    if (healthController.health > 0)
+                    {
+                        count++;
+                    }
+                }
+                else
+                {
+                    count++;
+                }
+            }
         }
 
         unlockDoorOnClear.SetLocked(count > 0);
+        unlockDoorOnClear.SetOpened(count == 0);
     }
 
     public void SetRoomActive(bool state)
