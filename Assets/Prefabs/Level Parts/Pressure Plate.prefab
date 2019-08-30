@@ -145,6 +145,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messageReceivers:
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   messageName: SetOpened
 --- !u!114 &5768947610256574548
 MonoBehaviour:

@@ -33,6 +33,8 @@ public class PressurePlateController : MonoBehaviour
             DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), PreasureSound);
             plateAnimator.SetBool("Pressed", true);
             stateBroadcaster.BroadcastState(true, 0.5f);
+
+            SendMessage("FinalizeAll", SendMessageOptions.DontRequireReceiver);
         }
     }
 

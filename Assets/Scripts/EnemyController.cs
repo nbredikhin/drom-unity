@@ -49,7 +49,8 @@ public class EnemyController : MonoBehaviour
     public bool isWalking = false;
     private bool controlledByPlayer;
 
-
+    public bool FinalLevelMode = false;
+    float randomSpeed = 0;
     GameObject sovereign;
     // Start is called before the first frame update
     void Start()
@@ -71,6 +72,8 @@ public class EnemyController : MonoBehaviour
     {
         currentNoiseInteval = Random.Range(SoundIntervalMin, SoundIntervalMax);
         noiseIntervalStart = Time.time;
+
+        randomSpeed = Random.Range(0.2f, 1);
     }
 
     void RecalculatePath()
@@ -101,13 +104,21 @@ public class EnemyController : MonoBehaviour
 
         ProcessInput();
         Scream();
+
+        if (FinalLevelMode)
+        {
+            rb.velocity = Vector2.down * MOVEMENT_BASE_SPEED * Time.deltaTime * randomSpeed;
+            isWalking = true;
+            lookDirection = Vector2.down;
+
+            return;
+        }
+
         if (ProcessEnemyStuff()) return;
     }
 
     bool ProcessEnemyStuff()
     {
-
-
         if (controlledByPlayer) return true;
         if (target == null) return true;
 
