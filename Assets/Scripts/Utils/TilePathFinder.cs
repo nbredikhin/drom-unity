@@ -44,11 +44,12 @@ public class TilePathFinder : MonoBehaviour
 
     public List<Vector3> FindPath(Vector2 from, Vector2 to)
     {
-        var closedSet = new Collection<PathNode>();
-        var openSet = new Collection<PathNode>();
+        var visitedNodes = new Collection<PathNode>();
+        var nodesToVisit = new Collection<PathNode>();
 
         var startPosition = grid.WorldToCell(from);
         var finishPosition = grid.WorldToCell(to);
+
         PathNode startNode = new PathNode()
         {
             position = startPosition,
@@ -57,28 +58,28 @@ public class TilePathFinder : MonoBehaviour
             heuristicEstimatePathLength = GetHeuristicPathLength(startPosition, finishPosition)
         };
 
-        openSet.Add(startNode);
+        nodesToVisit.Add(startNode);
 
         int iterationsCount = 0;
 
-        while (openSet.Count > 0)
+        while (nodesToVisit.Count > 0)
         {
-            var currentNode = openSet.OrderBy(node => node.EstimateFullPathLength).First();
+            var currentNode = nodesToVisit.OrderBy(node => node.EstimateFullPathLength).First();
             if (currentNode.position == finishPosition)
             {
                 return GetPathFromNode(currentNode);
             }
-            openSet.Remove(currentNode);
-            closedSet.Add(currentNode);
+            nodesToVisit.Remove(currentNode);
+            visitedNodes.Add(currentNode);
 
-            foreach (var neighbourNode in GetNodeNeighbours(currentNode, finishPosition))
+            foreach (var neighbourNode in GetNodeNeighbours(currentNode, startPosition, finishPosition))
             {
-                if (closedSet.Count(node => node.position == neighbourNode.position) > 0)
+                if (visitedNodes.Count(node => node.position == neighbourNode.position) > 0)
                     continue;
-                var openNode = openSet.FirstOrDefault(node => node.position == neighbourNode.position);
+                var openNode = nodesToVisit.FirstOrDefault(node => node.position == neighbourNode.position);
                 if (openNode == null)
                 {
-                    openSet.Add(neighbourNode);
+                    nodesToVisit.Add(neighbourNode);
                 }
                 else if (openNode.pathLengthFromStart > neighbourNode.pathLengthFromStart)
                 {
@@ -112,15 +113,17 @@ public class TilePathFinder : MonoBehaviour
         return result;
     }
 
-    private bool GetTilePassable(Vector3Int position)
+    private bool GetTilePassable(Vector3Int position, Vector3Int startPosition)
     {
-        bool isPassable = false;
-        collisionTilemaps.ForEach(tilemap =>
-            isPassable = isPassable || tilemap.GetTile(position));
-        return !isPassable;
+        if ((position - startPosition).magnitude > 1.6) return false;
+        foreach (var tilemap in collisionTilemaps)
+        {
+            if (tilemap.GetTile(position)) return false;
+        }
+        return true;
     }
 
-    private List<PathNode> GetNodeNeighbours(PathNode node, Vector3Int finishPosition)
+    private List<PathNode> GetNodeNeighbours(PathNode node, Vector3Int startPosition, Vector3Int finishPosition)
     {
         var neighbourPositions = new Vector3Int[4];
         neighbourPositions[0] = node.position + new Vector3Int(1, 0, 0);
@@ -131,7 +134,7 @@ public class TilePathFinder : MonoBehaviour
         var result = new List<PathNode>();
         foreach (var pos in neighbourPositions)
         {
-            if (GetTilePassable(pos))
+            if (GetTilePassable(pos, startPosition))
             {
                 var neighbourNode = new PathNode()
                 {
