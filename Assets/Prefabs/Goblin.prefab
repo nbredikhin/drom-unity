@@ -153,6 +153,9 @@ MonoBehaviour:
     m_Bits: 9472
   DrawPath: 0
   PathColor: {r: 0, g: 1, b: 0, a: 1}
+  NoiseSound: {fileID: 8300000, guid: 1ad87eb5aa8ec074087b99415ffff4c6, type: 3}
+  SoundIntervalMin: 5
+  SoundIntervalMax: 10
   KnockBackTime: 0.3
   AttackTime: 0.55
   MaxAttackDistance: 0.1

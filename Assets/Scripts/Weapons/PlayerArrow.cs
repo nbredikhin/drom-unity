@@ -11,7 +11,7 @@ public class PlayerArrow : MonoBehaviour
     public float KnockBackForce = 20.0f;
 
     private GameObject player;
-
+    public AudioClip ArrowSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +43,7 @@ public class PlayerArrow : MonoBehaviour
         transform.position = transform.parent.position;
         transform.parent = null;
         GetComponent<Rigidbody2D>().velocity = direction.normalized * TravelSpeed;
+        DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), ArrowSound);
     }
 
     void OnTriggerEnter2D(Collider2D collider)

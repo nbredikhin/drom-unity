@@ -24,6 +24,12 @@ public class EnemyController : MonoBehaviour
     private int currentPathNode;
     private float pathUpdateTime = 0;
 
+    public AudioClip NoiseSound;
+    float noiseIntervalStart;
+    float currentNoiseInteval;
+    public float SoundIntervalMin = 5;
+    public float SoundIntervalMax = 10;
+
     bool knockedBack;
     float knockBackStart;
     public float KnockBackTime = 0.3f;
@@ -61,6 +67,12 @@ public class EnemyController : MonoBehaviour
         RecalculatePath();
     }
 
+    void OnEnable()
+    {
+        currentNoiseInteval = Random.Range(SoundIntervalMin, SoundIntervalMax);
+        noiseIntervalStart = Time.time;
+    }
+
     void RecalculatePath()
     {
         // If path was recalculated too recently
@@ -88,12 +100,14 @@ public class EnemyController : MonoBehaviour
         if (isDying) return;
 
         ProcessInput();
-
+        Scream();
         if (ProcessEnemyStuff()) return;
     }
 
     bool ProcessEnemyStuff()
     {
+
+
         if (controlledByPlayer) return true;
         if (target == null) return true;
 
@@ -210,6 +224,18 @@ public class EnemyController : MonoBehaviour
             }
         }
         return false;
+    }
+
+    void Scream()
+    {
+        if (Time.time - noiseIntervalStart > currentNoiseInteval) {
+            noiseIntervalStart = Time.time;
+            currentNoiseInteval = Random.Range(SoundIntervalMin, SoundIntervalMax);
+            if (!isDying)
+            {
+                DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), NoiseSound);
+            }
+        }
     }
 
     void ProcessInput()

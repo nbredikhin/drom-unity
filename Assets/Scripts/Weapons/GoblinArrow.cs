@@ -10,6 +10,8 @@ public class GoblinArrow : MonoBehaviour
     public float Damage = 10.0f;
     public float KnockBackForce = 20.0f;
 
+    public AudioClip ArrowSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,8 @@ public class GoblinArrow : MonoBehaviour
             direction = Vector2.up;
         }
         GetComponent<Rigidbody2D>().velocity = direction.normalized * TravelSpeed;
+
+        DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), ArrowSound);
     }
 
     void OnTriggerEnter2D(Collider2D collider)

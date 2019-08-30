@@ -9,6 +9,8 @@ public class SovereignFireballController : MonoBehaviour
     public float TravelSpeed = 1.0f;
     GameObject shooter;
 
+    public AudioClip FireballSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +48,8 @@ public class SovereignFireballController : MonoBehaviour
             direction = Vector2.up;
         }
         GetComponent<Rigidbody2D>().velocity = direction.normalized * TravelSpeed;
+
+        DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), FireballSound);
     }
 
     void ControlEnemy(GameObject target)
@@ -66,7 +70,7 @@ public class SovereignFireballController : MonoBehaviour
     {
         if (collider.gameObject.tag == "Enemy")
         {
-            ControlEnemy(collider.gameObject);  
+            ControlEnemy(collider.gameObject);
         }
 
         isShooting = false;

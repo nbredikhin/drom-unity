@@ -11,6 +11,8 @@ public class LeverController : MonoBehaviour
     public bool state = false;
     private StateBroadcaster stateBroadcaster;
 
+    public AudioClip LeverSound;
+
     void Start()
     {
         if (animator == null)
@@ -32,5 +34,7 @@ public class LeverController : MonoBehaviour
         animator.speed = 1;
         animator.SetBool("State", state);
         stateBroadcaster.BroadcastState(state, delay);
+
+        DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), LeverSound);
     }
 }

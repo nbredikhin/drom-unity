@@ -58,6 +58,11 @@ public class PlayerController : MonoBehaviour
     public bool isBlockActive = false;
     private float blockUsedTime = 0.0f;
 
+    public List<AudioClip> StepSounds;
+
+    public AudioClip DashSound;
+    public AudioClip BlockSound;
+
     private void Start()
     {
         if (rb == null)
@@ -84,6 +89,11 @@ public class PlayerController : MonoBehaviour
         if (isDead) return;
         ProcessInput();
         Move();
+
+        if (_movementSpeed > 0 && !GetComponent<AudioSource>().isPlaying)
+        {
+            DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), StepSounds[UnityEngine.Random.Range(0, StepSounds.Count)]);
+        }
     }
 
     IEnumerator BlockCoroutine()
@@ -103,6 +113,14 @@ public class PlayerController : MonoBehaviour
         healthController.damageBlocked = false;
         yield return new WaitForSeconds(blockCooldown);
         isBlockAvailable = true;
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (isBlockActive && ((1 << col.gameObject.layer) & LayerMask.GetMask("GoblinWeapons", "PlayerWeapons")) != 0)
+        {
+            DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), BlockSound);
+        }
     }
 
     IEnumerator DashCoroutine(Vector2 direction)
@@ -145,6 +163,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Dash") && isDashAvaiable)
         {
             StartCoroutine(DashCoroutine(_movementDirection));
+            DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), DashSound);
         }
 
         if (Input.GetButtonDown("Block") && isBlockAvailable)

@@ -4912,6 +4912,12 @@ MonoBehaviour:
   blockDuration: 0.75
   blockCooldown: 0.8
   isBlockActive: 0
+  StepSounds:
+  - {fileID: 8300000, guid: 52d62990df7684048b7eeb9124431474, type: 3}
+  - {fileID: 8300000, guid: b5d264a508421bd41b7f777f61a0f6fe, type: 3}
+  - {fileID: 8300000, guid: 28a39a5ccf9f307499c04c79acad0275, type: 3}
+  DashSound: {fileID: 8300000, guid: 3b62843fbfbd95148806e5e48699fb6f, type: 3}
+  BlockSound: {fileID: 8300000, guid: 0a7ab8383fd4936449c5df5ae56e87d9, type: 3}
 --- !u!114 &9001907900422162117
 MonoBehaviour:
   m_ObjectHideFlags: 0

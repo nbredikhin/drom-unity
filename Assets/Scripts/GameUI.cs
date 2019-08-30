@@ -15,6 +15,8 @@ public class GameUI : MonoBehaviour
     public bool isFakePause = false;
     private bool isGamePaused = false;
 
+    public AudioClip FancyPauseSound;
+
     void Start()
     {
         deathScreen.SetActive(false);
@@ -42,6 +44,11 @@ public class GameUI : MonoBehaviour
         if (isFakePause)
         {
             GameObject.FindObjectOfType<PlayerController>().GetComponent<Collider2D>().enabled = !isGamePaused;
+            var AS = GetComponent<AudioSource>();
+            if (!AS.isPlaying)
+            {
+                DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(AS, FancyPauseSound);
+            }
         }
         else
         {

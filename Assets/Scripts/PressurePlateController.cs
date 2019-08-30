@@ -10,6 +10,8 @@ public class PressurePlateController : MonoBehaviour
 
     private StateBroadcaster stateBroadcaster;
 
+    public AudioClip PreasureSound;
+
     void Start()
     {
         plateColliders = new HashSet<Collider2D>();
@@ -28,6 +30,7 @@ public class PressurePlateController : MonoBehaviour
         // If first object enter plate
         if (plateColliders.Count == 1)
         {
+            DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), PreasureSound);
             plateAnimator.SetBool("Pressed", true);
             stateBroadcaster.BroadcastState(true, 0.5f);
         }
@@ -41,6 +44,7 @@ public class PressurePlateController : MonoBehaviour
         // If last object exit plate
         if (plateColliders.Count == 0)
         {
+            DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), PreasureSound);
             plateAnimator.SetBool("Pressed", false);
             stateBroadcaster.BroadcastState(false, 0.25f);
         }

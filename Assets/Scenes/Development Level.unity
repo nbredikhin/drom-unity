@@ -2387,21 +2387,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
-        type: 3}
-      propertyPath: exitGameObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
-        type: 3}
-      propertyPath: nextCamera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
-        type: 3}
-      propertyPath: isFrontDoor
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 641570704876963071, guid: c1ce29f5d083d154ba690b830265d5d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2466,6 +2451,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
+        type: 3}
+      propertyPath: exitGameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
+        type: 3}
+      propertyPath: nextCamera
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
+        type: 3}
+      propertyPath: isFrontDoor
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 641570704694251967, guid: c1ce29f5d083d154ba690b830265d5d2,
         type: 3}
@@ -2558,6 +2558,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 566885150880161786, guid: ee7c8d5a579c644978c8850061354f0c,
         type: 3}
+    - target: {fileID: 9001907900422162120, guid: a45a55db26b513749b990e30726125cb,
+        type: 3}
+      propertyPath: isBlockActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 908420122, guid: a45a55db26b513749b990e30726125cb, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -2963,16 +2968,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door 1
       objectReference: {fileID: 0}
-    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
-        type: 3}
-      propertyPath: exitGameObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
-        type: 3}
-      propertyPath: nextCamera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 641570704876963071, guid: c1ce29f5d083d154ba690b830265d5d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3027,6 +3022,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
+        type: 3}
+      propertyPath: exitGameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
+        type: 3}
+      propertyPath: nextCamera
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1ce29f5d083d154ba690b830265d5d2, type: 3}

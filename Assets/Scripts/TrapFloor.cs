@@ -23,6 +23,8 @@ public class TrapFloor : MonoBehaviour
     // Time when trap was last opened
     private float trapOpenedTime = 0.0f;
 
+    public AudioClip TrapSound;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -58,6 +60,8 @@ public class TrapFloor : MonoBehaviour
 
     public void OnTrapOpen()
     {
+        DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), TrapSound);
+
         isTrapOpened = true;
 
         trapColliders.RemoveWhere(collider =>

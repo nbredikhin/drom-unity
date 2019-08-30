@@ -21,6 +21,8 @@ public class SwingableSword : MonoBehaviour
     public float Damage = 10.0f;
     public float KnockBackForce = 20.0f;
 
+    public AudioClip SwingSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +64,8 @@ public class SwingableSword : MonoBehaviour
         swingEnd = swingStart + SwingAngleDeg;
 
         isShooting = true;
+
+        DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), SwingSound);
     }
 
     void OnTriggerEnter2D(Collider2D collider)

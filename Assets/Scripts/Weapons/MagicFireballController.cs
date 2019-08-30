@@ -9,6 +9,8 @@ public class MagicFireballController : MonoBehaviour
     public float TravelSpeed = 1.0f;
     GameObject shooter;
 
+    public AudioClip FireballSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +48,7 @@ public class MagicFireballController : MonoBehaviour
             direction = Vector2.up;
         }
         GetComponent<Rigidbody2D>().velocity = direction.normalized * TravelSpeed;
+        DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), FireballSound);
     }
 
     void SwapShooterWithGameObject(GameObject target)
@@ -57,7 +60,7 @@ public class MagicFireballController : MonoBehaviour
     {
         if (((1 << collider.gameObject.layer) & LayerMask.GetMask("DeathTiles", "Level")) == 0)
         {
-            SwapShooterWithGameObject(collider.gameObject);  
+            SwapShooterWithGameObject(collider.gameObject);
         }
         isShooting = false;
         Destroy(gameObject);

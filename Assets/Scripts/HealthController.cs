@@ -22,6 +22,8 @@ public class HealthController : MonoBehaviour
     void Start()
     {
         health = MaxHealth;
+
+        DigitalRuby.SoundManagerNamespace.SoundManager.MaxDuplicateAudioClips = 1;
     }
 
     // Update is called once per frame
@@ -57,7 +59,8 @@ public class HealthController : MonoBehaviour
         }
 
         SendMessage("OnDamage", SendMessageOptions.DontRequireReceiver);
-    DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), HitSound);
+        DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), HitSound);
+
         coolDownStart = Time.realtimeSinceStartup;
         coolingDown = true;
     }
