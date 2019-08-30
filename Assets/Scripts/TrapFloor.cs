@@ -33,6 +33,10 @@ public class TrapFloor : MonoBehaviour
         {
             trapOpenedTime = Time.time + Random.Range(0.0f, openDelay);
         }
+        else
+        {
+            trapOpenedTime = -openDelay/2.0f;
+        }
     }
 
     void Update()
@@ -41,6 +45,7 @@ public class TrapFloor : MonoBehaviour
         {
             if (Time.time - trapOpenedTime > openDelay)
             {
+                trapOpenedTime = Time.time;
                 OpenTrap();
             }
         }
@@ -50,18 +55,16 @@ public class TrapFloor : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         animator.SetTrigger("Open Trap");
+        DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), TrapSound);
     }
 
     public void OpenTrap()
     {
-        trapOpenedTime = Time.time;
         StartCoroutine(OpenCoroutine(trapMode == TrapMode.OpenOnDelay ? 0.0f : openDelay));
     }
 
     public void OnTrapOpen()
     {
-        DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), TrapSound);
-
         isTrapOpened = true;
 
         trapColliders.RemoveWhere(collider =>

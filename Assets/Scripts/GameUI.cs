@@ -44,10 +44,18 @@ public class GameUI : MonoBehaviour
         if (isFakePause)
         {
             GameObject.FindObjectOfType<PlayerController>().GetComponent<Collider2D>().enabled = !isGamePaused;
+            if (isGamePaused)
+            {
+                GameObject.FindObjectOfType<PlayerController>().GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+            }
+            else
+            {
+                GameObject.FindObjectOfType<PlayerController>().GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            }
             var AS = GetComponent<AudioSource>();
             if (!AS.isPlaying)
             {
-                DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(AS, FancyPauseSound);
+                // DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(AS, FancyPauseSound);
             }
         }
         else
@@ -55,6 +63,7 @@ public class GameUI : MonoBehaviour
             Time.timeScale = isGamePaused ? 0 : 1;
         }
 
+        DigitalRuby.SoundManagerNamespace.SoundManager.SoundVolume = isGamePaused ? 0 : 1;
         pauseScreen.SetActive(isGamePaused);
     }
 

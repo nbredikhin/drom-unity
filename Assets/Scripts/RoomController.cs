@@ -10,6 +10,7 @@ public class RoomController : MonoBehaviour
     // GameObjects to be activated when room entered
     public GameObject[] roomEnemies;
     public Transform enterancePosition;
+    public Transform respawnPosition;
     // Door to be unlocked when all enemies are dead;
     public DoorController unlockDoorOnClear;
     // Current room state
@@ -32,9 +33,19 @@ public class RoomController : MonoBehaviour
         clearCheckTime = Time.time;
         SetRoomActive(false);
 
-        if (isDefaultRoom)
+        if (GameRespawn.respawnRoomName != null)
         {
-            RoomController.SetActiveRoom(this);
+            if (GameRespawn.respawnRoomName == name)
+            {
+                RoomController.SetActiveRoom(this);
+            }
+        }
+        else
+        {
+            if (isDefaultRoom)
+            {
+                RoomController.SetActiveRoom(this);
+            }
         }
     }
 
@@ -85,9 +96,21 @@ public class RoomController : MonoBehaviour
 
         roomCamera.gameObject.SetActive(state);
 
-        if (state && enterancePosition != null)
+        if (state)
         {
-            GameObject.Find("Player").transform.position = enterancePosition.position;
+            if (enterancePosition != null)
+            {
+                GameObject.Find("Player").transform.position = enterancePosition.position;
+            }
+            else if(respawnPosition != null)
+            {
+                GameObject.Find("Player").transform.position = respawnPosition.position;
+            }
+
+            if (respawnPosition != null || enterancePosition != null)
+            {
+                GameRespawn.respawnRoomName = name;
+            }
         }
     }
 }
