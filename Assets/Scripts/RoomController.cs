@@ -13,6 +13,7 @@ public class RoomController : MonoBehaviour
     public Transform respawnPosition;
     // Door to be unlocked when all enemies are dead;
     public DoorController unlockDoorOnClear;
+    public bool openDoorOnClear = false;
     // Current room state
     private bool isRoomActive = false;
     private float clearCheckTime = 0.0f;
@@ -81,7 +82,10 @@ public class RoomController : MonoBehaviour
         }
 
         unlockDoorOnClear.SetLocked(count > 0);
-        unlockDoorOnClear.SetOpened(count == 0);
+        if (openDoorOnClear)
+        {
+            unlockDoorOnClear.SetOpened(count == 0);
+        }
     }
 
     public void SetRoomActive(bool state)

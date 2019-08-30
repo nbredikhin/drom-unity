@@ -928,12 +928,12 @@ PrefabInstance:
     - target: {fileID: 5563661731316162700, guid: e1b173bb0ccd16c459adcf0c0dae05a0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.689
+      value: 4.411
       objectReference: {fileID: 0}
     - target: {fileID: 5563661731316162700, guid: e1b173bb0ccd16c459adcf0c0dae05a0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.615
+      value: 1.639
       objectReference: {fileID: 0}
     - target: {fileID: 5563661731316162700, guid: e1b173bb0ccd16c459adcf0c0dae05a0,
         type: 3}
@@ -1125,7 +1125,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5768947610256574546, guid: 8d16b2d1e4c29da42bb9dbdfa20e6c38,
         type: 3}
+      propertyPath: messageReceivers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768947610256574546, guid: 8d16b2d1e4c29da42bb9dbdfa20e6c38,
+        type: 3}
       propertyPath: messageReceivers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1709141325}
+    - target: {fileID: 5768947610256574546, guid: 8d16b2d1e4c29da42bb9dbdfa20e6c38,
+        type: 3}
+      propertyPath: messageReceivers.Array.data[1]
       value: 
       objectReference: {fileID: 1416440043}
     m_RemovedComponents: []
@@ -1676,6 +1686,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4c1e3c5af38bc64c82546b9b5ab1e25, type: 3}
+--- !u!4 &852064890 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5425404794103362896, guid: b4a3f1de436fc4f49bf703f66df7792c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1373255120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &859212843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2284,6 +2300,36 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2031742989}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1100737226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1100737227}
+  m_Layer: 0
+  m_Name: Entrance
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1100737227
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100737226}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.912, y: -0.041, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 852064890}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1104386016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2645,6 +2691,11 @@ PrefabInstance:
       propertyPath: roomEnemies.Array.data[0]
       value: 
       objectReference: {fileID: 54590054}
+    - target: {fileID: 5425404794103362903, guid: b4a3f1de436fc4f49bf703f66df7792c,
+        type: 3}
+      propertyPath: enterancePosition
+      value: 
+      objectReference: {fileID: 1100737227}
     - target: {fileID: 3390534245556624093, guid: b4a3f1de436fc4f49bf703f66df7792c,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -3304,7 +3355,7 @@ PrefabInstance:
     - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
         type: 3}
       propertyPath: _isOpened
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 641570704876963059, guid: c1ce29f5d083d154ba690b830265d5d2,
         type: 3}
@@ -3316,6 +3367,12 @@ PrefabInstance:
 --- !u!4 &1709141324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 641570704876963071, guid: c1ce29f5d083d154ba690b830265d5d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1709141323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1709141325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 641570704876963064, guid: c1ce29f5d083d154ba690b830265d5d2,
     type: 3}
   m_PrefabInstance: {fileID: 1709141323}
   m_PrefabAsset: {fileID: 0}
@@ -3861,6 +3918,11 @@ PrefabInstance:
       propertyPath: roomEnemies.Array.data[7]
       value: 
       objectReference: {fileID: 696852251}
+    - target: {fileID: 5425404794103362903, guid: b4a3f1de436fc4f49bf703f66df7792c,
+        type: 3}
+      propertyPath: openDoorOnClear
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3390534245556624093, guid: b4a3f1de436fc4f49bf703f66df7792c,
         type: 3}
       propertyPath: m_LocalPosition.y

@@ -36,6 +36,9 @@ public class PlayerController : MonoBehaviour
 
     public Rigidbody2D rb;
 
+    public bool isDashEnabled = true;
+    public bool isBlockEnabled = true;
+
     private bool isDashAvaiable = true;
     private bool isDashActive;
     public bool IsDashing => isDashActive;
@@ -98,6 +101,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator BlockCoroutine()
     {
+        if (!isBlockEnabled) yield break;
         if (!isBlockAvailable) yield break;
         if (isDashActive) yield break;
         var shield = transform.Find("Shield").gameObject;
@@ -125,6 +129,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator DashCoroutine(Vector2 direction)
     {
+        if (!isDashEnabled) yield break;
         if (!isDashAvaiable) yield break;
         if (isBlockActive) yield break;
 
