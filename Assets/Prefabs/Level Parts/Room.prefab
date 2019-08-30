@@ -46,7 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDefaultRoom: 0
   roomCamera: {fileID: 3390534245556624066}
-  roomGameObjects: []
+  roomEnemies: []
+  enterancePosition: {fileID: 0}
+  unlockDoorOnClear: {fileID: 0}
 --- !u!1001 &5425404794723815337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62,12 +64,12 @@ PrefabInstance:
     - target: {fileID: 7225867292994033012, guid: 89d07138839953a4f8a7e17cf4ac4fe7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.24199998
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7225867292994033012, guid: 89d07138839953a4f8a7e17cf4ac4fe7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.083000004
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7225867292994033012, guid: 89d07138839953a4f8a7e17cf4ac4fe7,
         type: 3}
