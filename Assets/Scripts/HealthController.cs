@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using DigitalRuby;
+
 public class HealthController : MonoBehaviour
 {
     public float MaxHealth = 100.0f;
@@ -12,6 +14,9 @@ public class HealthController : MonoBehaviour
     float coolDownStart;
 
     public float health;
+
+    public AudioClip DeathSound;
+    public AudioClip HitSound;
 
     // Start is called before the first frame update
     void Start()
@@ -45,11 +50,14 @@ public class HealthController : MonoBehaviour
         {
             health = 0;
             SendMessage("Die");
+
+            DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), DeathSound);
+
             return;
         }
 
         SendMessage("OnDamage", SendMessageOptions.DontRequireReceiver);
-
+    DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), HitSound);
         coolDownStart = Time.realtimeSinceStartup;
         coolingDown = true;
     }
