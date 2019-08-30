@@ -164,5 +164,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TravelSpeed: 1
-  Damage: 1e+9
-  KnockBackForce: 100
+  Damage: 10
+  KnockBackForce: 80

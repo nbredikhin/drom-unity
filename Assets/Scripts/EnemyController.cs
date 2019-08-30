@@ -113,18 +113,18 @@ public class EnemyController : MonoBehaviour
         var currentPosition = transform.position;
         var raycastDirection = targetPosition - currentPosition;
         raycastDirection.z = 0;
-        var raycastHit = Physics2D.Raycast(currentPosition,
+        var raycastHit = Physics2D.Raycast(currentPosition + raycastDirection.normalized * 0.16f,
                                            raycastDirection.normalized,
                                            raycastDirection.magnitude - 0.05f,
                                            PathFindObstaclesMask);
 
-        Debug.DrawLine(currentPosition, currentPosition + raycastDirection, Color.red);
+        // Debug.DrawLine(currentPosition, currentPosition + raycastDirection, Color.red);
         var isPathClear = raycastHit.collider == null || raycastHit.collider.gameObject.Equals(gameObject);
 
         if (isPathClear)
         {
             if (DrawPath)
-                Debug.DrawLine(currentPosition, currentPosition + raycastDirection, Color.red);
+                Debug.DrawLine(currentPosition, currentPosition + raycastDirection, PathColor);
         }
         else
         {
@@ -187,7 +187,7 @@ public class EnemyController : MonoBehaviour
             PrepareForAttack();
             return true;
         }
-        if (direction.magnitude > 0.05f)
+        if (direction.magnitude > 0.05f && isPathClear)
         {
             if (isFollowingEnabled)
             {
@@ -232,7 +232,7 @@ public class EnemyController : MonoBehaviour
 
         if (_movementDirection.magnitude > 0.05f)
         {
-        
+
             isWalking = true;
             lookDirection = _movementDirection;
         }
@@ -268,7 +268,6 @@ public class EnemyController : MonoBehaviour
 
     void KnockBack(Vector2 direction)
     {
-        if (isDying) return;
         knockedBack = true;
         knockBackStart = Time.time;
 
