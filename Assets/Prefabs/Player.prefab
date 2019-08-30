@@ -4908,8 +4908,8 @@ MonoBehaviour:
   particles: {fileID: 669679015528015673}
   enemiesAttackOnClick: 0
   respawnPosition: {x: 0, y: 0}
-  blockDuration: 0.5
-  blockCooldown: 1
+  blockDuration: 0.75
+  blockCooldown: 0.8
   isBlockActive: 0
 --- !u!114 &9001907900422162117
 MonoBehaviour:
@@ -5004,6 +5004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   HealthCoolDownSec: 0.5
+  damageBlocked: 0
   health: 0
 --- !u!1 &9001907901194309187
 GameObject:
