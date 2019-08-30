@@ -2546,7 +2546,7 @@ PrefabInstance:
     - target: {fileID: 908420128, guid: a45a55db26b513749b990e30726125cb, type: 3}
       propertyPath: ProjectilePrefab
       value: 
-      objectReference: {fileID: 6976964110205412019, guid: 93634173e5aa1b842804bdf7f247b3fa,
+      objectReference: {fileID: 566885150880161786, guid: ee7c8d5a579c644978c8850061354f0c,
         type: 3}
     - target: {fileID: 908420122, guid: a45a55db26b513749b990e30726125cb, type: 3}
       propertyPath: m_IsTrigger
@@ -3173,7 +3173,7 @@ PrefabInstance:
     - target: {fileID: 4486274334058217688, guid: 986128127313d496f9103c49cb9d4d96,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4486274334058217691, guid: 986128127313d496f9103c49cb9d4d96,
         type: 3}

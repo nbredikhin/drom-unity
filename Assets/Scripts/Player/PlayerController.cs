@@ -36,23 +36,29 @@ public class PlayerController : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    private bool _isDashAvailable = true;
-    private bool _isDashActive;
-    public bool IsDashing => _isDashActive;
-    private Vector2 _dashDirection;
+    private bool isDashAvaiable = true;
+    private bool isDashActive;
+    public bool IsDashing => isDashActive;
+    private Vector2 dashDirection;
 
     public string[] dashIgnoredLayerNames;
     private int[] dashIgnoredLayers;
     private int playerLayer;
 
-    public ParticleSystem _particleSystem;
+    public ParticleSystem particles;
 
     public bool enemiesAttackOnClick = false;
     private bool isDead = false;
 
     public Vector2 respawnPosition;
 
-    private void Awake()
+    public float blockDuration = 0.5f;
+    public float blockCooldown = 1.0f;
+    private bool isBlockAvailable = true;
+    public bool isBlockActive = false;
+    private float blockUsedTime = 0.0f;
+
+    private void Start()
     {
         if (rb == null)
         {
@@ -66,10 +72,11 @@ public class PlayerController : MonoBehaviour
         }
         playerLayer = LayerMask.NameToLayer("Player");
 
-        var emission = _particleSystem.emission;
+        var emission = particles.emission;
         emission.enabled = false;
 
         respawnPosition = transform.position;
+        transform.Find("Shield").gameObject.SetActive(false);
     }
 
     void Update()
@@ -79,26 +86,48 @@ public class PlayerController : MonoBehaviour
         Move();
     }
 
-    IEnumerator Dash(Vector2 direction)
+    IEnumerator BlockCoroutine()
     {
-        var emission = _particleSystem.emission;
+        if (!isBlockAvailable) yield break;
+        if (isDashActive) yield break;
+        var shield = transform.Find("Shield").gameObject;
+        var healthController = GetComponent<HealthController>();
+        shield.SetActive(true);
+        // shield.GetComponent<SpriteRenderer>().sortingOrder = MovementDirection.y > 0 ? -1 : 1;
+        healthController.damageBlocked = true;
+        isBlockAvailable = false;
+        isBlockActive = true;
+        yield return new WaitForSeconds(blockDuration);
+        isBlockActive = false;
+        shield.gameObject.SetActive(false);
+        healthController.damageBlocked = false;
+        yield return new WaitForSeconds(blockCooldown);
+        isBlockAvailable = true;
+    }
+
+    IEnumerator DashCoroutine(Vector2 direction)
+    {
+        if (!isDashAvaiable) yield break;
+        if (isBlockActive) yield break;
+
+        var emission = particles.emission;
         foreach (int layer in dashIgnoredLayers)
         {
             Physics2D.IgnoreLayerCollision(playerLayer, layer, true);
         }
         emission.enabled = true;
-        _isDashAvailable = false;
-        _isDashActive = true;
-        _dashDirection = direction.normalized;
+        isDashAvaiable = false;
+        isDashActive = true;
+        dashDirection = direction.normalized;
         yield return new WaitForSeconds(DASH_DURATION);
         foreach (int layer in dashIgnoredLayers)
         {
             Physics2D.IgnoreLayerCollision(playerLayer, layer, false);
         }
         emission.enabled = false;
-        _isDashActive = false;
+        isDashActive = false;
         yield return new WaitForSeconds(DASH_COOLDOWN);
-        _isDashAvailable = true;
+        isDashAvaiable = true;
     }
 
     void ProcessInput()
@@ -113,9 +142,15 @@ public class PlayerController : MonoBehaviour
         _mouseDirection = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
         _mouseDirection.Normalize();
 
-        if (Input.GetButtonDown("Dash") && _isDashAvailable)
+        if (Input.GetButtonDown("Dash") && isDashAvaiable)
         {
-            StartCoroutine(Dash(_movementDirection));
+            StartCoroutine(DashCoroutine(_movementDirection));
+        }
+
+        if (Input.GetButtonDown("Block") && isBlockAvailable)
+        {
+            Debug.Log("Block");
+            StartCoroutine(BlockCoroutine());
         }
 
         if (Input.GetButtonDown("Fire1"))
@@ -142,9 +177,9 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        if (_isDashActive)
+        if (isDashActive)
         {
-            rb.velocity = _dashDirection * DASH_SPEED * Time.deltaTime;
+            rb.velocity = dashDirection * DASH_SPEED * Time.deltaTime;
         }
         else
         {

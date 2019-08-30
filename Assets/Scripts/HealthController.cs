@@ -8,6 +8,7 @@ public class HealthController : MonoBehaviour
     public float HealthCoolDownSec = 0.5f;
 
     bool coolingDown;
+    public bool damageBlocked = false;
     float coolDownStart;
 
     public float health;
@@ -33,7 +34,7 @@ public class HealthController : MonoBehaviour
 
     void DecreaseHealth(float value)
     {
-        if (coolingDown || health <= 0)
+        if (coolingDown || health <= 0 || (damageBlocked && value < MaxHealth))
         {
             return;
         }

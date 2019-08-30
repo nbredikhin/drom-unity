@@ -34,6 +34,7 @@ public class PlayerAnimator : MonoBehaviour
 
         anim.SetFloat("Speed", pc.MovementSpeed);
         anim.SetBool("Dashing", pc.IsDashing);
+        anim.SetBool("Blocking", pc.isBlockActive);
     }
 
     void Die()
