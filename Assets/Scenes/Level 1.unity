@@ -4352,6 +4352,31 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 0.72
       objectReference: {fileID: 0}
+    - target: {fileID: 912330648023337837, guid: 02246197c8e2978419fa1245b0bcabf3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 912330648023337837, guid: 02246197c8e2978419fa1245b0bcabf3,
+        type: 3}
+      propertyPath: m_RefResolutionX
+      value: 192
+      objectReference: {fileID: 0}
+    - target: {fileID: 912330648023337837, guid: 02246197c8e2978419fa1245b0bcabf3,
+        type: 3}
+      propertyPath: m_RefResolutionY
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 912330648023337837, guid: 02246197c8e2978419fa1245b0bcabf3,
+        type: 3}
+      propertyPath: m_UpscaleRT
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 912330648023337837, guid: 02246197c8e2978419fa1245b0bcabf3,
+        type: 3}
+      propertyPath: m_PixelSnapping
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02246197c8e2978419fa1245b0bcabf3, type: 3}
 --- !u!1 &1197310024
@@ -7908,6 +7933,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1598965235372744686, guid: 38241fdcfd47f3945a5b25cb2a384c81,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f0c9752f7ff9b549afd62b33b0cf715, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38241fdcfd47f3945a5b25cb2a384c81, type: 3}
 --- !u!1001 &5425404793249101996

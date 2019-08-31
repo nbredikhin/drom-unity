@@ -21,7 +21,7 @@ public class BoxController : MonoBehaviour
         {
             DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(AS, PushSounds[Random.Range(0, PushSounds.Count)]);
         }
-        if (rb.velocity.magnitude < 0.015 && AS.isPlaying)
+        if (rb.velocity.magnitude < 0.005 && AS.isPlaying)
         {
             AS.Stop();
         }

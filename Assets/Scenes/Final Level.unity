@@ -2865,7 +2865,7 @@ PrefabInstance:
     - target: {fileID: 5441305853292213072, guid: 5e3d09e6919dd874fa32af28437a91ed,
         type: 3}
       propertyPath: dialogueStrings.Array.data[1]
-      value: Now then, were you coming for treasure, right?
+      value: Now then, you were coming for treasure, right?
       objectReference: {fileID: 0}
     - target: {fileID: 5441305853292213072, guid: 5e3d09e6919dd874fa32af28437a91ed,
         type: 3}
@@ -9877,6 +9877,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1143524895050936386, guid: 5dd5eac80c72e7244a15e74805c3f268,
+        type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 1021204099}
     - target: {fileID: 2457450892474739424, guid: 5dd5eac80c72e7244a15e74805c3f268,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -9889,6 +9894,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd5eac80c72e7244a15e74805c3f268, type: 3}
+--- !u!1 &1021204099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6541020574696890436, guid: 5dd5eac80c72e7244a15e74805c3f268,
+    type: 3}
+  m_PrefabInstance: {fileID: 1021204098}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1023068777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17408,6 +17419,11 @@ PrefabInstance:
     - target: {fileID: 9001907900422162123, guid: a45a55db26b513749b990e30726125cb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001907900422162120, guid: a45a55db26b513749b990e30726125cb,
+        type: 3}
+      propertyPath: isDashEnabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 908420128, guid: a45a55db26b513749b990e30726125cb, type: 3}

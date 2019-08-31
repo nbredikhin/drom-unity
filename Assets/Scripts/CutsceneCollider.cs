@@ -29,5 +29,6 @@ public class CutsceneCollider : MonoBehaviour
             cutsceneObject.SetActive(false);
         }
         GameObject.FindObjectOfType<PlayerController>().GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        gameObject.SetActive(false);
     }
 }
