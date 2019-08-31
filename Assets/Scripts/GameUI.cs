@@ -13,7 +13,7 @@ public class GameUI : MonoBehaviour
     public GameObject pauseScreen;
     public Text muteButtonText;
     public bool isFakePause = false;
-    private bool isGamePaused = false;
+    public bool isGamePaused = false;
 
     public GameObject cutsceneScreen;
     public Text cutsceneDialogueText;
@@ -104,11 +104,6 @@ public class GameUI : MonoBehaviour
             {
                 GameObject.FindObjectOfType<PlayerController>().GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             }
-            var AS = GetComponent<AudioSource>();
-            if (!AS.isPlaying)
-            {
-                // DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(AS, FancyPauseSound);
-            }
         }
         else
         {
@@ -116,7 +111,8 @@ public class GameUI : MonoBehaviour
         }
 
         float gameVolume = PersistentGameState.isGameMuted ? 0.0f : 1.0f;
-        DigitalRuby.SoundManagerNamespace.SoundManager.SoundVolume = isGamePaused ? 0.0f : gameVolume;
+        // DigitalRuby.SoundManagerNamespace.SoundManager.SoundVolume = isGamePaused ? 0.0f : gameVolume;
+        // DigitalRuby.SoundManagerNamespace.SoundManager.MusicVolume = isGamePaused ? 0.0f : gameVolume;
         pauseScreen.SetActive(isGamePaused);
     }
 
@@ -129,6 +125,7 @@ public class GameUI : MonoBehaviour
 
     public void OnRespawnClick()
     {
+        if (isGamePaused) TogglePause();
         hud.SetActive(true);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

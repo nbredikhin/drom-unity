@@ -2902,6 +2902,11 @@ PrefabInstance:
       propertyPath: dialogueStrings.Array.data[8]
       value: Chop-chop now! I will be waiting you in the treasure place!
       objectReference: {fileID: 0}
+    - target: {fileID: 5441305853292213072, guid: 5e3d09e6919dd874fa32af28437a91ed,
+        type: 3}
+      propertyPath: cutsceneObject
+      value: 
+      objectReference: {fileID: 1957917836}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e3d09e6919dd874fa32af28437a91ed, type: 3}
 --- !u!114 &321415399 stripped
@@ -19109,6 +19114,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f6dbf87bfb3a4ab292bcdebaa5aa839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1957917836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4598821902245078177, guid: 961ca98225fc6bd4595102019f8f6a8d,
+    type: 3}
+  m_PrefabInstance: {fileID: 353456310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1960381274
 PrefabInstance:
   m_ObjectHideFlags: 0
