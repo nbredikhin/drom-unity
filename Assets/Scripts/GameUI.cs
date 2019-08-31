@@ -15,6 +15,16 @@ public class GameUI : MonoBehaviour
     public bool isFakePause = false;
     private bool isGamePaused = false;
 
+    public GameObject cutsceneScreen;
+    public Text cutsceneDialogueText;
+
+    private List<string> cutsceneDialogue;
+    public static bool isCutsceneActive;
+    private int cutscenePos;
+    private int cutsceneTypingIndex;
+    private float cutsceneTypingTime;
+    private GameObject cutsceneCollider;
+
     public AudioClip FancyPauseSound;
 
     void Start()
@@ -23,6 +33,7 @@ public class GameUI : MonoBehaviour
         interactionText.SetActive(false);
         hud.SetActive(true);
         pauseScreen.SetActive(false);
+        cutsceneScreen.SetActive(false);
 
         muteButtonText.text = PersistentGameState.isGameMuted ? "UNMUTE GAME" : "MUTE GAME";
     }
@@ -33,11 +44,50 @@ public class GameUI : MonoBehaviour
         {
             TogglePause();
         }
+
+        if (isCutsceneActive)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                cutscenePos++;
+                if (cutscenePos < cutsceneDialogue.Count)
+                {
+                    cutsceneDialogueText.text = "";
+                    cutsceneTypingIndex = 0;
+                }
+                else
+                {
+                    isCutsceneActive = false;
+                    cutsceneScreen.SetActive(false);
+                    cutsceneCollider.SendMessage("OnCutsceneEnded");
+                }
+                Time.timeScale = 1;
+            }
+
+            if (Time.time - cutsceneTypingTime > 0.04f && isCutsceneActive)
+            {
+                cutsceneDialogueText.text = cutsceneDialogue[cutscenePos].Substring(0, cutsceneTypingIndex);
+                cutsceneTypingIndex = Mathf.Min(cutsceneTypingIndex + 1, cutsceneDialogue[cutscenePos].Length);
+            }
+        }
+    }
+
+    public void LoadCutscene(string[] dialogueStrings, GameObject cutsceneCollider)
+    {
+        if (isCutsceneActive) return;
+        cutsceneDialogue = new List<string>(dialogueStrings);
+        cutscenePos = 0;
+        isCutsceneActive = true;
+        cutsceneDialogueText.text = "";
+        cutsceneScreen.SetActive(true);
+        cutsceneTypingIndex = 0;
+        cutsceneTypingTime = Time.time;
+        this.cutsceneCollider = cutsceneCollider;
     }
 
     public void TogglePause()
     {
-        if (deathScreen.activeInHierarchy)
+        if (deathScreen.activeInHierarchy || isCutsceneActive)
         {
             return;
         }

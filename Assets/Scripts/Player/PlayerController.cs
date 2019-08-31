@@ -155,6 +155,11 @@ public class PlayerController : MonoBehaviour
 
     void ProcessInput()
     {
+        if (GameUI.isCutsceneActive) {
+            _movementDirection = Vector2.zero;
+            _movementSpeed = 0.0f;
+            return;
+        }
         //movement direction processing
         _movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         _movementSpeed = Mathf.Clamp(_movementDirection.magnitude, 0.0f, 1.0f);
