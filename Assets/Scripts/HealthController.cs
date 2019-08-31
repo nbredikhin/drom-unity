@@ -18,17 +18,55 @@ public class HealthController : MonoBehaviour
     public AudioClip DeathSound;
     public AudioClip HitSound;
 
+    public bool isFlashingEnabled = true;
+    public SpriteRenderer flashingSprite;
+    public float flashingTime = 1.25f;
+    public float flashingInterval = 0.25f;
+    private float flashingStartTime = 0.0f;
+    private bool isFlashing = false;
+
     // Start is called before the first frame update
     void Start()
     {
         health = MaxHealth;
 
         DigitalRuby.SoundManagerNamespace.SoundManager.MaxDuplicateAudioClips = 1;
+
+        flashingStartTime = -flashingTime;
+        if (isFlashingEnabled && flashingSprite == null)
+        {
+            flashingSprite = GetComponent<SpriteRenderer>();
+        }
+    }
+
+    void StartFlashing()
+    {
+        if (flashingSprite == null)
+        {
+            return;
+        }
+
+        isFlashing = true;
+        flashingStartTime = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (isFlashing)
+        {
+            if (Time.time - flashingStartTime > flashingTime)
+            {
+                isFlashing = false;
+                flashingSprite.enabled = true;
+            }
+            else
+            {
+                flashingSprite.enabled = Mathf.Repeat(Time.time, flashingInterval) > flashingInterval * 0.5f;
+            }
+        }
+
         if (!coolingDown)
         {
             return;
@@ -57,6 +95,8 @@ public class HealthController : MonoBehaviour
 
             return;
         }
+
+        StartFlashing();
 
         SendMessage("OnDamage", SendMessageOptions.DontRequireReceiver);
         DigitalRuby.SoundManagerNamespace.SoundManager.PlayOneShotSound(GetComponent<AudioSource>(), HitSound);

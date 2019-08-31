@@ -105,6 +105,10 @@ MonoBehaviour:
   health: 0
   DeathSound: {fileID: 8300000, guid: c6aee3b2366ee0e44aa9eca39457180e, type: 3}
   HitSound: {fileID: 8300000, guid: 957cb35307300c146b6b93bf3cf1c2fb, type: 3}
+  isFlashingEnabled: 1
+  flashingSprite: {fileID: 0}
+  flashingTime: 0.5
+  flashingInterval: 0.25
 --- !u!114 &8362024426138792163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +168,7 @@ MonoBehaviour:
   isFollowingEnabled: 1
   isAttackEnabled: 1
   isWalking: 0
+  FinalLevelMode: 0
 --- !u!82 &4371870339331013710
 AudioSource:
   m_ObjectHideFlags: 0

@@ -138,6 +138,7 @@ MonoBehaviour:
   isFollowingEnabled: 1
   isAttackEnabled: 1
   isWalking: 0
+  FinalLevelMode: 0
 --- !u!50 &4486274334058217665
 Rigidbody2D:
   serializedVersion: 4
@@ -210,6 +211,10 @@ MonoBehaviour:
   health: 0
   DeathSound: {fileID: 8300000, guid: 3968a8b699ef9c54b8d47916d18b3c19, type: 3}
   HitSound: {fileID: 8300000, guid: 689f27b0e548b29489fef853cbc14ab0, type: 3}
+  isFlashingEnabled: 1
+  flashingSprite: {fileID: 0}
+  flashingTime: 0.5
+  flashingInterval: 0.25
 --- !u!210 &725527455405233032
 SortingGroup:
   m_ObjectHideFlags: 0
