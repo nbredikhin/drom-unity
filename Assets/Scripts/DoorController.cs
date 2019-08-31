@@ -63,7 +63,8 @@ public class DoorController : MonoBehaviour
         if (nextLevel != null && nextLevel.Length > 1)
         {
             PersistentGameState.respawnRoomName = null;
-            SceneManager.LoadScene(nextLevel);
+            // SceneManager.LoadScene(nextLevel);
+            Initiate.Fade(nextLevel, Color.black, 2.0f);
         }
         else if (nextRoom != null)
         {
