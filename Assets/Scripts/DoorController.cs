@@ -62,7 +62,7 @@ public class DoorController : MonoBehaviour
         }
         if (nextLevel != null && nextLevel.Length > 1)
         {
-            GameRespawn.respawnRoomName = null;
+            PersistentGameState.respawnRoomName = null;
             SceneManager.LoadScene(nextLevel);
         }
         else if (nextRoom != null)

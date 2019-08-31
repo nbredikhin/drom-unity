@@ -34,9 +34,9 @@ public class RoomController : MonoBehaviour
         clearCheckTime = Time.time;
         SetRoomActive(false);
 
-        if (GameRespawn.respawnRoomName != null)
+        if (PersistentGameState.respawnRoomName != null)
         {
-            if (GameRespawn.respawnRoomName == name)
+            if (PersistentGameState.respawnRoomName == name)
             {
                 RoomController.SetActiveRoom(this);
             }
@@ -113,7 +113,7 @@ public class RoomController : MonoBehaviour
 
             if (respawnPosition != null || enterancePosition != null)
             {
-                GameRespawn.respawnRoomName = name;
+                PersistentGameState.respawnRoomName = name;
             }
         }
     }

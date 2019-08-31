@@ -11,7 +11,7 @@ public class GameUI : MonoBehaviour
     public GameObject hud;
     public Image healthBar;
     public GameObject pauseScreen;
-
+    public Text muteButtonText;
     public bool isFakePause = false;
     private bool isGamePaused = false;
 
@@ -23,6 +23,8 @@ public class GameUI : MonoBehaviour
         interactionText.SetActive(false);
         hud.SetActive(true);
         pauseScreen.SetActive(false);
+
+        muteButtonText.text = PersistentGameState.isGameMuted ? "UNMUTE GAME" : "MUTE GAME";
     }
 
     void Update()
@@ -63,7 +65,8 @@ public class GameUI : MonoBehaviour
             Time.timeScale = isGamePaused ? 0 : 1;
         }
 
-        DigitalRuby.SoundManagerNamespace.SoundManager.SoundVolume = isGamePaused ? 0 : 1;
+        float gameVolume = PersistentGameState.isGameMuted ? 0.0f : 1.0f;
+        DigitalRuby.SoundManagerNamespace.SoundManager.SoundVolume = isGamePaused ? 0.0f : gameVolume;
         pauseScreen.SetActive(isGamePaused);
     }
 
@@ -78,6 +81,12 @@ public class GameUI : MonoBehaviour
     {
         hud.SetActive(true);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void ToggleGameMute()
+    {
+        PersistentGameState.isGameMuted = !PersistentGameState.isGameMuted;
+        muteButtonText.text = PersistentGameState.isGameMuted ? "UNMUTE GAME" : "MUTE GAME";
     }
 
     public void ShowInteractionSuggestion(InteractableObject targetObject)
