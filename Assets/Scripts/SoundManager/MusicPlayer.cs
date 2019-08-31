@@ -7,6 +7,7 @@ public class MusicPlayer : MonoBehaviour
 {
     public static MusicPlayer instance;
     private AudioSource music;
+    public static bool isMusicDisabled = false;
     void Awake()
     {
         if (instance != null && instance != this) {
@@ -24,10 +25,13 @@ public class MusicPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Final Level")
+        if (isMusicDisabled)
         {
             music.volume = 0.0f;
         }
-        music.volume = PersistentGameState.isGameMuted ? 0.0f : 1.0f;
+        else
+        {
+            music.volume = PersistentGameState.isGameMuted ? 0.0f : 1.0f;
+        }
     }
 }
